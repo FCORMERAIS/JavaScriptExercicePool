@@ -9,8 +9,8 @@ const planet = {
     neptune :  164.79132,
 }
 let year =31557600
-function dogYears (planet2,dogyear) {
-    dogyear = planet[planet2] * dogyear
-    dogyear = dogyear*year*7
-    return Math.round(dogyear*100) / 100
+
+function dogYears(a, b) {
+    var rep = b / year / planete[a] * 7
+    return Math.round(rep * 100) / 100
 }
