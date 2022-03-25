@@ -10,5 +10,7 @@ const planet = {
 }
 let year =31557600
 function dogYears (planet2,dogyear) {
-    return Math.round((planet[planet2] * dogyear * year)*100) / 100
+    dogyear = planet[planet2] * dogyear
+    dogyear = dogyear*year*7
+    return Math.round(dogyear*100) / 100
 }
