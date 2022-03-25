@@ -21,7 +21,7 @@ undef = undefined
 obj.str = str,obj.bool=bool,obj.undef=undef,obj.num =num
 const nested = {
     arr:[4,undefined,'2'],
-    obj: tempo ={
+    obj: {
         str :obj.str,
         num:obj.num,
         bool:obj.bool
