@@ -5,4 +5,4 @@ let undef
 str = 'string'
 num = 1
 bool = true
-undef = null  
+undef = undefined  
