@@ -4,7 +4,7 @@ function getAcceleration(objet) {
     }else if (typeof objet.Δv !== 'undefined' && typeof objet.Δt !== 'undefined') {
         return objet.Δv / objet.Δt
     }else if (typeof objet.t !== 'undefined' && typeof objet.d !== 'undefined') {
-        return (2*d) / (t*t)
+        return (2*objet.d) / (objet.t*objet.t)
     }else {
         return 'impossible'
     }
