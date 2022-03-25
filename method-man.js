@@ -18,6 +18,6 @@ function capitalize (n){
     n = n.toLowerCase()
     var tempo = words(n) 
     tempo[0] = tempo[0].toUpperCase()
-    n = tempo.Join('')
+    n = tempo.join('')
     return n
 }
