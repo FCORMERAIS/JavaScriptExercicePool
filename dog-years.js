@@ -10,6 +10,6 @@ const planet = {
 }
 
 function dogYears(a, b) {
-    var rep = b / 31557600  / planete[a] * 7
+    var rep = b / 31557600  / planet[a] * 7
     return Math.round(rep * 100) / 100
 }
