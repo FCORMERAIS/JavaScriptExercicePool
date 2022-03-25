@@ -29,6 +29,9 @@ const nested = {
     }
 }
 
+nested.obj.update = 5
+
 Object.freeze(nested);
+Object.freeze(nested.obj);
 Object.freeze(arr);
 Object.freeze(obj);
