@@ -24,7 +24,7 @@ const nested = {
     obj: {
         str :obj.str,
         num:obj.num,
-        bool:obj.bool,
+        bool:obj.bool
     }
 }
 
