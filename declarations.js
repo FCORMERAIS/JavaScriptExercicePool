@@ -7,6 +7,7 @@ const nested = {
     obj:{str:obj.str,num:obj.num,bool:obj.bool}
 }
 
+Object.freeze(nested.arr)
 Object.freeze(nested.obj);
 Object.freeze(nested);
 Object.freeze(obj);
