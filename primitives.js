@@ -1,4 +1,8 @@
-let str = String
-let num = Number
-let bool = Boolean
-let undef = undefined 
+let str 
+let num 
+let bool 
+let undef
+str = String 
+num = Number
+bool = Boolean
+undef = undefined 
