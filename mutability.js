@@ -1,5 +1,5 @@
-const clone1 = Object.assign({},person)
-const clone2 = Object.assign({},person) 
+const clone1 = person
+const clone2 = person 
 person.age = 78
 person.country = "FR"
 const samePerson = person
