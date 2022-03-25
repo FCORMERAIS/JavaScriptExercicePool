@@ -1,2 +1,5 @@
 const get = (n) => sourceObject.n
-const set = (key, value) => sourceObject.key = value
+function set(key, value) {
+    sourceObject.key = value
+    return value
+}
