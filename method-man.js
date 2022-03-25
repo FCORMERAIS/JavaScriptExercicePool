@@ -16,7 +16,7 @@ function whisper (n) {
 
 function capitalize (n){
     n = n.toLowerCase()
-    var tempo = words(n) 
+    var tempo = split('') 
     tempo[0] = tempo[0].toUpperCase()
     n = tempo.join('')
     return n
