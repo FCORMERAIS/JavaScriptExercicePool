@@ -21,6 +21,8 @@ function superTypeOf(n) {
         return 'undefined'
     }else if (n instanceof Set == true) {
         return 'Set'
+    }else if (n instanceof Array == true) {
+        return 'Array'
     }
     return capitalize(typeof n)
 }
