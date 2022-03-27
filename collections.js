@@ -11,5 +11,5 @@ const arrToObj = (n) => Object.assign({},n)
 const strToObj = (n) => Object.assign({},strToArr(n))
 
 function superTypeOf(n) {
-    return typeof n
+    return typeof(n)
 }
