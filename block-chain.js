@@ -1,4 +1,4 @@
-class Block {
+class blockChain  {
     constructor(index, previousHash, timestamp, data, hash) {
         this.index = index;
         this.previousHash = previousHash.toString();
