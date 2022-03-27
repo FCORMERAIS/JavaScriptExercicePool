@@ -17,5 +17,13 @@ function superTypeOf(n) {
     else if (n instanceof Map == true) {
         return 'Map'
     }
-    return string(typeof(n))
+    else if (typeof n == 'undefined') {
+        return 'undefined'
+    }
+    n = typeof n
+    n.Split('')
+    n[0].toUpperCase()
+    n.Join("")
+    return n
 }
+
