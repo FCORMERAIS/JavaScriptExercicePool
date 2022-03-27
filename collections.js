@@ -23,7 +23,7 @@ function superTypeOf(n) {
     n = typeof n
     n.split('')
     n[0].toUpperCase()
-    n.join("")
+    n.join('')
     return n
 }
 
