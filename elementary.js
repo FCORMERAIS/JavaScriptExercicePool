@@ -17,12 +17,12 @@ const multiply = (a,b) => {
 
 const divide  = (a,b) => {
     let result = 0
-    a = Math.abs(a)
-    b = Math.abs(b)
     let signe = 0
     if (b < 0) {
         signe = 1
     }
+    a = Math.abs(a)
+    b = Math.abs(b)
     while (a >= b) {
         result = result +1 
         a = a-b
