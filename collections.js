@@ -17,5 +17,5 @@ function superTypeOf(n) {
     else if (n instanceof Map == true) {
         return 'map'
     }
-    return string(typeof(n)
+    return string(typeof(n))
 }
