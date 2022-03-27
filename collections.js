@@ -21,7 +21,7 @@ function superTypeOf(n) {
         return 'undefined'
     }
     n = typeof n
-    n.split('')
+    n = n.split('')
     n[0].toUpperCase()
     n = arrToStr(n)
     return n
