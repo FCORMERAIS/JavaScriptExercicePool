@@ -1,9 +1,10 @@
-new class blockChain  {
-    constructor(index, previousHash, timestamp, data, hash) {
-        this.index = index;
-        this.previousHash = previousHash.toString();
-        this.timestamp = timestamp;
-        this.data = data;
-        this.hash = hash.toString();
+function blockChain(data,prev = { index: 0, hash: '0' }){
+    let obj  = {
+        data,
+        prev,
     }
+    obj.index = obj.prev.index + 1
+    obj.hash = hashCode(obj.index+prev.hash+JSON.stringify(data))
+    obj.chain = (data) => blockChain(data,obj)
+    return obj
 }
