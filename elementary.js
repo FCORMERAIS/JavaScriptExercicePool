@@ -1,7 +1,8 @@
 const multiply = (a,b) => {
     let count = 0
     let result = 0
-    while (b > count) {
+    let tempo = Math.abs(b)
+    while (tempo > count) {
         result = result+a
         count = count+1
     }
