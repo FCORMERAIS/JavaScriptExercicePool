@@ -11,13 +11,13 @@ const arrToObj = (n) => Object.assign({},n)
 const strToObj = (n) => Object.assign({},strToArr(n))
 
 function superTypeOf(n) {
-    if (n == null){
+    if (n instanceof null == true){
         return 'null'
     }
     else if (n instanceof Map == true) {
         return 'Map'
     }
-    else if (typeof n == 'undefined') {
+    else if (n instanceof undefined == 'undefined') {
         return 'undefined'
     }else if (n instanceof Set == true) {
         return 'Set'
