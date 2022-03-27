@@ -37,6 +37,8 @@ const divide  = (a,b) => {
 }
 
 const modulo  = (a,b) => {
+    a = Math.abs(a)
+    b = Math.abs(b)
     while (a >= b) {
         a = a-b
     }
