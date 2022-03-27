@@ -9,7 +9,4 @@ const objToArr = (n) => Object.values(n)
 const objToMap = (n) => new Map(Object.entries(n))
 const arrToObj = (n) => Object.assign({},n)
 const strToObj = (n) => Object.assign({},strToArr(n))
-
-function superTypeOf(n) {
-    return typeof(n)
-}
+const superTypeOf = (n) => typeof n
