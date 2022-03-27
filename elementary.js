@@ -1,7 +1,7 @@
 const multiply = (a,b) => {
     let count = 0
     let result = 0
-    while (b >= count) {
+    while (b > count) {
         result = result+a
         count = count+1
     }
