@@ -1,9 +1,10 @@
 const repeat = (str,number) => {
     let count = 0
-    let answer = ""
+    let answer = "'"
     while (count < number) {
     count=count+1
     answer=answer+str
     }
-    answer
+    answer=answer+'\''
+    console.log(answer)
 }
