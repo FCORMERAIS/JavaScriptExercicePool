@@ -8,18 +8,18 @@ const multiply = (a,b) => {
     return result
 }
 
-const divide  = (a,b) => {
-    let result = 0
-    while (a >= b) {
-        result = result +1 
-        a = a-b
-    }
-    return result
-}
+// const divide  = (a,b) => {
+//     let result = 0
+//     while (a >= b) {
+//         result = result +1 
+//         a = a-b
+//     }
+//     return result
+// }
 
-const modulo  = (a,b) => {
-    while (a >= b) {
-        a = a-b
-    }
-    return a
-}
+// const modulo  = (a,b) => {
+//     while (a >= b) {
+//         a = a-b
+//     }
+//     return a
+// }
