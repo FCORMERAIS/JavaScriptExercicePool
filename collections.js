@@ -21,9 +21,9 @@ function superTypeOf(n) {
         return 'undefined'
     }
     n = typeof n
-    n.Split('')
+    n.split('')
     n[0].toUpperCase()
-    n.Join("")
+    n.join("")
     return n
 }
 
