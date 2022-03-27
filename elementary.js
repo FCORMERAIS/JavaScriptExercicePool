@@ -19,9 +19,15 @@ const divide  = (a,b) => {
     let result = 0
     a = Math.abs(a)
     b = Math.abs(b)
+    if (b < 0) {
+        signe = 1
+    }
     while (a >= b) {
         result = result +1 
         a = a-b
+    }
+    if (signe == 1 ){
+        return -result
     }
     return result
 }
