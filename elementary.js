@@ -17,7 +17,7 @@ const multiply = (a,b) => {
 
 const divide  = (a,b) => {
     let result = 0
-    while (a >= b) {
+    while (Math.abs(a) >= Math.abs(b)) {
         result = result +1 
         a = a-b
     }
