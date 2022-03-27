@@ -1,4 +1,4 @@
-const arrToSet = (n) => Set(n)
+const arrToSet = (n) => new Set(n)
 const arrToStr = (n) => n.join('')
 const setToArr = (n) => Array.from(n);
 const setToStr = (n) => n.join('')
