@@ -19,6 +19,8 @@ function superTypeOf(n) {
     }
     else if (typeof n == 'undefined') {
         return 'undefined'
+    }else if (n instanceof Set == true) {
+        return 'Set'
     }
     n = typeof n
     n = n.split('')
