@@ -38,11 +38,8 @@ const divide  = (a,b) => {
 
 const modulo  = (a,b) => {
     let signe = 0
-    if (b < 0 || a < 0) {
+    if (b < 0) {
         signe = 1
-    }
-    if (b < 0 && a < 0) {
-        signe = 0
     }
     a = Math.abs(a)
     b = Math.abs(b)
