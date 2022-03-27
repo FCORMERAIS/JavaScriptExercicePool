@@ -1,0 +1,1 @@
+const repeat = (str,number) => str.repeat(number)
