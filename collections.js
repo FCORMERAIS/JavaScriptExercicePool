@@ -7,7 +7,7 @@ const strToSet = (n) => new Set(strToArr(n))
 const mapToObj = (n) => Object.fromEntries(n);
 const objToArr = (n) => Object.values(n)
 const objToMap = (n) => new Map(Object.entries(n))
-const arrToObj = (n) => Object(n)
+const arrToObj = (n) => Object.assign({}, ['a','b','c']);
 const strToObj = (n) => Object(n)
 
 function superTypeOf(n) {
