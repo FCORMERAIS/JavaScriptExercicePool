@@ -18,7 +18,7 @@ const multiply = (a,b) => {
 const divide  = (a,b) => {
     let result = 0
     let signe = 0
-    if (b < 0) {
+    if (b < 0 || a < 0) {
         signe = 1
     }
     a = Math.abs(a)
