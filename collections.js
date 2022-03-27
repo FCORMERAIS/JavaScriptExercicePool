@@ -1,7 +1,7 @@
 const arrToSet = (n) => new Set(n)
 const arrToStr = (n) => n.join('')
 const setToArr = (n) => Array.from(n);
-const setToStr = (n) => n.join('')
+const setToStr = (n) => setToArr(n).join('')
 const strToArr = (n) => Array(n)
 const strToSet = (n) => Set(n)
 const mapToObj = (n) => Object(n)
