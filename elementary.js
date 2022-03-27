@@ -36,9 +36,9 @@ const divide  = (a,b) => {
     return result
 }
 
-// const modulo  = (a,b) => {
-//     while (a >= b) {
-//         a = a-b
-//     }
-//     return a
-// }
+const modulo  = (a,b) => {
+    while (a >= b) {
+        a = a-b
+    }
+    return a
+}
