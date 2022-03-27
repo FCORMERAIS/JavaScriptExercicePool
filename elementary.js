@@ -21,6 +21,9 @@ const divide  = (a,b) => {
     if (b < 0 || a < 0) {
         signe = 1
     }
+    if (b < 0 && a < 0) {
+        signe = 0
+    }
     a = Math.abs(a)
     b = Math.abs(b)
     while (a >= b) {
