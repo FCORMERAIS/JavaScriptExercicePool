@@ -5,5 +5,5 @@ const repeat = (str,number) => {
     count=count+1
     answer=answer+str
     }
-    console.log(answer)
+    answer
 }
