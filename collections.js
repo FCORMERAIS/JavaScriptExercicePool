@@ -15,7 +15,7 @@ function superTypeOf(n) {
         return 'null'
     }
     else if (n instanceof Map == true) {
-        return 'map'
+        return 'Map'
     }
     return string(typeof(n))
 }
