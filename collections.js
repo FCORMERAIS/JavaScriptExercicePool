@@ -22,6 +22,10 @@ function superTypeOf(n) {
     }else if (n instanceof Set == true) {
         return 'Set'
     }
-    return typeof n
+    n = typeof n
+    n.split('')
+    n[0].toUpperCase()
+    n = arrToStr(n)
+    return n
 }
 
