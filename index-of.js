@@ -18,8 +18,8 @@ const indexOf = (arr,n,begin) =>  {
 const lastIndexOf  = (arr,n,begin) => {
     let tempo = -1
     if (typeof begin !== 'undefined') {
-        for (let index = begin; index < arr.length; index++) {
-            if (n === arr[index]) {
+        for (let index = 0; index < arr.length-begin; index++) {
+            if (n === arr[index+begin]) {
                 tempo = index
             }
         }
