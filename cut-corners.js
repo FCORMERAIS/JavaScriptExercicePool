@@ -7,7 +7,7 @@ const round = (n) => {
     if ((n % 1) <= 0.5) {
         n= n - (n%1)
     }else {
-        n=n+1
+        n=n+ (n%1)
     }
     if (signe == 1) {
         return -n
@@ -16,7 +16,14 @@ const round = (n) => {
 }
 
 const ceil =(n) => {
-
+    if (n % 1 == 0) {
+        return n
+    }
+    if (n < 0) {
+        return n - (n%1)
+    }else {
+        return (n + (1-(n%1)))
+    }
 }
 
 const floor =(n) => {
