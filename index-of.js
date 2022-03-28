@@ -12,6 +12,7 @@ const indexOf = (arr,n,begin) =>  {
             }
         }
     }
+    return -1
 }
 
 const lastIndexOf  = (arr,n) => {
