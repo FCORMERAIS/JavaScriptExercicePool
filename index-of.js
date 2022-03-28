@@ -44,5 +44,8 @@ const lastIndexOf  = (arr,n,begin) => {
 console.log(lastIndexOf([0, 0, 't', 't'], 't'))
 
 const includes  = (arr,n) => {
-    
+    if( indexOf(arr,n) !== -1) {
+        return true
+    }
+    return false
 }
