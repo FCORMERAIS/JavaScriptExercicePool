@@ -31,6 +31,7 @@ const floor =(n) => {
     if (n < 0) {
         signe = 1
     }
+    n = Math.abs(n)
     n = n - (n%1) 
     if (signe == 1) {
         return (-n)-1
