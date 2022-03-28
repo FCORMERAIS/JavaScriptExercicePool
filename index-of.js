@@ -41,7 +41,6 @@ const lastIndexOf  = (arr,n,begin) => {
     return -1
 }
 
-console.log(lastIndexOf([0, 0, 't', 't'], 't'))
 
 const includes  = (arr,n) => {
     if( indexOf(arr,n) !== -1) {
