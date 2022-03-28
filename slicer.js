@@ -7,12 +7,12 @@ const slice = (slice,n1, n2) =>{
     let arr = slice
     if ( typeof n1 == "undefined") {
     }else if (typeof n2 == "undefined") {
-        for (let index = n1; index < array.length; index++) {
-            arr.push(array[index])  
+        for (let index = n1; index < slice.length; index++) {
+            arr.push(slice[index])  
         }
     }else {
-        for (let index = n1; index < n2; index++) {
-            arr.push(array[index])  
+        for (let index = n1; slice < n2; index++) {
+            arr.push(slice[index])  
         }
     }
     if (type == 1) {
@@ -20,3 +20,4 @@ const slice = (slice,n1, n2) =>{
     }
     return arr
 }
+console.log(slice('abcdef', 2))
