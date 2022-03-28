@@ -5,9 +5,9 @@ const round = (n) => {
     }
     n = Math.abs(n)
     if ((n % 1) <= 0.5) {
-        n=n+1
-    }else {
         n= n - (n%1)
+    }else {
+        n=n+1
     }
     if (signe == 1) {
         return -n
