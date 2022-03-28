@@ -27,7 +27,15 @@ const ceil =(n) => {
 }
 
 const floor =(n) => {
-
+    let signe = 0 
+    if (n < 0) {
+        signe = 1
+    }
+    n = n - (n%1) 
+    if (signe == 1) {
+        return (-n)-1
+    }
+    return n
 }
 
 const trunc =(n) => {
