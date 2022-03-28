@@ -10,6 +10,9 @@ const keepLast = (n) => n.slice(n.length-2,n.length)
 const keepFirstLast = (n) => {
     let a = keepFirst(n)
     let b = keepLast(n)
+    if (n.length <=2) {
+        return n
+    }
     n = a+b
     return n
 }
