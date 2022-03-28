@@ -4,7 +4,7 @@ const split = (arr,n) => {
     for (let index = 0; index < arr.length; index++) {
         let count = 0
         for (let i = 0; i < n.length; i++) {
-            while (arr[index+count] == n[i+count]) {
+            while (arr[index+count] === n[i+count]) {
                 count++
             }
         }
