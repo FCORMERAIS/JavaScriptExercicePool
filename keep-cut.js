@@ -1,27 +1,14 @@
 const cutFirst = (n) => n.slice(2,n.length)
 const cutLast = (n) => n.slice(0, n.length-2)
 const cutFirstLast = (n) => {
-    n = n.split("")
     n = cutFirst(n)
     n = cutLast(n)
     return n
 }
-
-const keepFirst = (n) => {
-    n = n.split("")
-    result.push(n[0],n[1])
-    return result.join("")
-}
-
-const keepLast = (n) => {
-    n = n.split("")
-    result.push(n[-1],n[-2])
-    return result.join("")
-}
-
+const keepFirst = (n) => n.slice(0,2)
+const keepLast = (n) => n.slice(n.length-2,n.length)
 const keepFirstLast = (n) => {
-    n = n.split("")
-    result.push(n[0],n[1])
-    result.push(n[-1],n[-2])
-    return result.join("")
+    n = keepFirst(n)
+    n = keepLast(n)
+    return n
 }
