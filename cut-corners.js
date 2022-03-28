@@ -40,5 +40,5 @@ const floor =(n) => {
 }
 
 const trunc =(n) => {
-
+    return n-(n%1)
 }
