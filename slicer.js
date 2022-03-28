@@ -4,7 +4,7 @@ const slice = (slice,n1, n2) =>{
         slice = slice.split("")
         type = 1
     }
-    let arr = slice
+    let arr = []
     if ( typeof n1 == "undefined") {
     }else if (typeof n2 == "undefined") {
         for (let index = n1; index < slice.length; index++) {
