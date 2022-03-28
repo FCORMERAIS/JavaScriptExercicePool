@@ -1,10 +1,4 @@
-let result = []
-const cutFirst = (n) => {
-    n = n.split("")
-    n.reverse()
-    return(n.reverse(cutLast(n)))
-}
-
+const cutFirst = (n) => n.slice(3,n.length)
 const cutLast = (n) => {
     n = n.split("")
     n.length = n.length-2;
