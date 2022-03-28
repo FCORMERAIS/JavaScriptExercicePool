@@ -8,7 +8,8 @@ const cutFirstLast = (n) => {
 const keepFirst = (n) => n.slice(0,2)
 const keepLast = (n) => n.slice(n.length-2,n.length)
 const keepFirstLast = (n) => {
-    n = keepFirst(n)
-    n = keepLast(n)
+    let a = keepFirst(n)
+    let b = keepLast(n)
+    n = a+b
     return n
 }
