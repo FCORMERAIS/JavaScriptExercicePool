@@ -1,10 +1,5 @@
-const cutFirst = (n) => n.slice(3,n.length)
-const cutLast = (n) => {
-    n = n.split("")
-    n.length = n.length-2;
-    return n
-}
-
+const cutFirst = (n) => n.slice(2,n.length)
+const cutLast = (n) => n.slice(0, n.length-2)
 const cutFirstLast = (n) => {
     n = n.split("")
     n = cutFirst(n)
