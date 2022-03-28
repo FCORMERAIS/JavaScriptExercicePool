@@ -7,7 +7,7 @@ const reverse = (n) => {
         return result
     }else {
         let arr = []
-        for (let i = str.length - 1; i >= 0; i--) {
+        for (let i = n.length - 1; i >= 0; i--) {
             arr.push(n[i])
         }
         return result
