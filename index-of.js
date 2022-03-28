@@ -28,7 +28,7 @@ const lastIndexOf  = (arr,n,begin) => {
             }
         }
     }else {
-        for (let index = 0; count != arr.length; index--) {
+        for (let index = arr.length -1; count != arr.length; index--) {
             if (n === arr[index]) {
                 return index
             }
@@ -40,6 +40,8 @@ const lastIndexOf  = (arr,n,begin) => {
     }
     return -1
 }
+
+console.log(lastIndexOf([0, 0, 't', 't'], 't'))
 
 const includes  = (arr,n) => {
     
