@@ -8,7 +8,7 @@ const slice = (slice,n1, n2) =>{
     if ( typeof n1 == "undefined") {
     }else if (typeof n2 == "undefined") {
         if (n1 < 0) {
-            n1 = slice.length - n1 
+            n1 = slice.length + n1 
         }
         for (let index = n1; index < slice.length; index++) {
             arr.push(slice[index])  
@@ -23,4 +23,3 @@ const slice = (slice,n1, n2) =>{
     }
     return arr
 }
-console.log(slice('abcdef', 2))
