@@ -10,6 +10,6 @@ const reverse = (n) => {
         for (let i = n.length - 1; i >= 0; i--) {
             arr.push(n[i])
         }
-        return result
+        return arr
     }
 }
