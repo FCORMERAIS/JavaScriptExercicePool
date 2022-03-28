@@ -16,5 +16,5 @@ const join = (arr,n) => {
     for (let index = 0; index < arr.length; index++) {
         str +=arr[index]+n
     }
-    return str
+    return str.slice(0, str.length - n.length)
 }
