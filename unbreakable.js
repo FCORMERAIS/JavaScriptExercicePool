@@ -18,5 +18,3 @@ const join = (arr,n) => {
     }
     return str
 }
-
-console.log(join(['ee', 'ff', 'g', ''], ','))
