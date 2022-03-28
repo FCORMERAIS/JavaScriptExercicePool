@@ -20,4 +20,3 @@ const slice = (slice,n1, n2) =>{
     }
     return arr
 }
-console.log(slice('abcdef', 2))
