@@ -5,11 +5,11 @@ const slice = (slice,n1, n2) =>{
         type = 1
     }
     let arr = []
-    if (n1 < 0) {
-        n1 = slice.length - n1 +1
-    }
     if ( typeof n1 == "undefined") {
     }else if (typeof n2 == "undefined") {
+        if (n1 < 0) {
+            n1 = slice.length - n1 
+        }
         for (let index = n1; index < slice.length; index++) {
             arr.push(slice[index])  
         }
