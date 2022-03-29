@@ -11,7 +11,7 @@ const flat = (arr,n) =>{
             }else {
                 for (let i = 0; i < arr[index].length; i++) {    
                     arr.push(arr[index][i])
-                    if (Array.isArray(arr[index]) == false ) {
+                    if (Array.isArray(arr[index][i]) == false ) {
                         res.push(arr[index][i])
                     }
                 }
