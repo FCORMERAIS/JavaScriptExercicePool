@@ -3,7 +3,7 @@ const flat = (arr,n) =>{
     if (typeof n === "undefined") {
         n= 1
     }
-    for (let flatt = 0; flatt < n; flatt++) {
+    for (let flatt = 0; flatt <= n; flatt++) {
         console.log(n)
         for (let index = 0; index < arr.length; index++) {
             if (Array.isArray(arr[index])) {
