@@ -30,13 +30,5 @@ const flat = (arr,n) =>{
             break
         }
     }
-    if (arr == [1]) {
-        return arr
-    }else if (arr == [1,[2]]) {
-        return [1,2]
-    }
-    if (arr == [1, [2, [3], [4, [5]]]]) {
-        return [1, 2, 3, 4, [5]]
-    }
     return res
 }
