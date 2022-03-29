@@ -9,7 +9,7 @@ const flat = (arr,n) =>{
                 res.push(arr[index])
                 arr = arr.filter(function(f) { return f !== arr[index] })
             }else {
-                for (let i = 0; i < array[index].length; i++) {    
+                for (let i = 0; i < arr[index].length; i++) {    
                 arr.push(arr[index][i])
                 }
                 arr = arr.filter(function(f) { return f !== arr[index] })
