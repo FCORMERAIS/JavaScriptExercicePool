@@ -12,6 +12,7 @@ const flat = (arr,n) =>{
                 arr.push(arr[index])
             }
         }
+        console.log(arr)
     }
     return res
 }
