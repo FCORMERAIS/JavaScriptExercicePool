@@ -23,10 +23,10 @@ const flat = (arr,n) =>{
         res.push(arr[index])
     }
     for (let index = 0; index < res.length; index++) {   
-        let tempo = arr[index] 
-        console.log(Array.isArray(arr[index]),tempo)
         if (Array.isArray(arr[index]) == false) {
             res[index]= index+1
+        }else {
+            break
         }
     }
     return res.sort()
