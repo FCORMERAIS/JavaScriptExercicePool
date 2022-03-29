@@ -24,8 +24,8 @@ const flat = (arr,n) =>{
     }
     for (let index = 0; index < res.length; index++) {    
         if (Array.isArray(arr[index]) == false) {
-            console.log(res)
             res[index]= index+1
+            console.log(res)
         }
     }
     return res.sort()
