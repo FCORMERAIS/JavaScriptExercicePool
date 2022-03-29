@@ -9,4 +9,3 @@ const chunk = (arr,n) => {
     result.push(arr.slice(0,arr.length+1))
     return result
 }
-console.log(chunk(['a', 'b', 'c', 'd'], 2))
