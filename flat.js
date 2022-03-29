@@ -22,5 +22,5 @@ const flat = (arr,n) =>{
     for (let index = 0; index < arr.length; index++) {
         res.push(arr[index])
     }
-    return res
+    return res.sort()
 }
