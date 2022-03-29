@@ -6,7 +6,7 @@ const flat = (arr,n) =>{
     let tempo
     for (let flatt = 0; flatt < n; flatt++) {
         for (let index = 0; index < arr.length; index++) {
-            console.log(arr[index])
+            console.log(arr)
             if (Array.isArray(arr[index])) {
                 for (let i = 0; i < arr[index].length; i++) {    
                     if (Array.isArray(arr[index][i]) == false ) {
