@@ -8,9 +8,7 @@ const flat = (arr,n) =>{
             if (Array.isArray(arr[index]) == false ) {
                 res.push(arr[index])
             }else {
-                for (let l = 0; l <= arr[index].length; l++) {
-                    res.push(arr[index])
-                }
+                res.push(arr[index])
             }
             arr = arr.filter(function(f) { return f !== arr[index] })
         }
