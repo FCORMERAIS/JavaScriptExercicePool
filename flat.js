@@ -7,12 +7,11 @@ const flat = (arr,n) =>{
         for (let index = 0; index < arr.length; index++) {
             if (Array.isArray(arr[index]) == false ) {
                 res.push(arr[index])
+                arr = arr.filter(function(f) { return f !== arr[index] })
             }else {
                 arr.push(arr[index])
             }
-            arr = arr.filter(function(f) { return f !== arr[index] })
         }
-        console.log(arr)
     }
     return res
 }
