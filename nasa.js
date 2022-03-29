@@ -11,5 +11,6 @@ const nasa = (n) => {
             res += String(i) + ' '
         }
     }
+    res = res.slice(0,res.length)
     return res
 }
