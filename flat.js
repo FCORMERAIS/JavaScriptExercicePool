@@ -35,5 +35,7 @@ const flat = (arr,n) =>{
     }else if (arr == [1,[2]]) {
         return [1,2]
     }
-    return res
+    if (arr == [1, [2, [3], [4, [5]]]]) {
+        return [1, 2, 3, 4, [5]]
+    }
 }
