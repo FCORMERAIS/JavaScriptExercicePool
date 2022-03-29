@@ -8,7 +8,6 @@ const flat = (arr,n) =>{
             if (Array.isArray(arr[index]) ) {
                 res.push(arr[index])
             }else {
-                console.log(arr)
                 for (let i = 0; i < arr[index].length; i++) {    
                     if (Array.isArray(arr[index][i]) == false ) {
                         res.push(arr[index][i])
