@@ -5,7 +5,7 @@ const flat = (arr,n) =>{
     }
     while (0!= n) {
         for (let index = 0; index < arr.length; index++) {
-            console.log(n)
+            console.log(Array.isArray(arr[index]))
         }
         n--
     }
