@@ -4,7 +4,7 @@ const flat = (arr,n) =>{
         n= 1
     }
     for (let flatt = 0; flatt < n; flatt++) {
-        console.log(arr,index)
+        console.log(arr)
         for (let index = 0; index < arr.length; index++) {
             if (Array.isArray(arr[index])) {
                 for (let i = 0; i < arr[index].length; i++) {    
