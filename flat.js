@@ -1,39 +1,39 @@
 const flat = (arr,n) =>{
-    // let res = []
-    // if (typeof n === "undefined") {
-    //     n= 1
-    // }
-    // for (let flatt = 0; flatt <= n; flatt++) {
-    //     for (let index = 0; index < arr.length; index++) {
-    //         if (Array.isArray(arr[index])) {
-    //             for (let i = 0; i < arr[index].length; i++) {    
-    //                 if (Array.isArray(arr[index][i]) == false ) {
-    //                     res.push(arr[index][i])
-    //                 }else {
-    //                     arr.push(arr[index][i])
-    //                 }
-    //             }
-    //         }else {
-    //             res.push(arr[index])
-    //         }
-    //         arr = arr.filter(function(f) { return f !== arr[index] })
-    //     }
-    // }
-    // for (let index = 0; index < arr.length; index++) {
-    //     res.push(arr[index])
-    // }
-    // for (let index = 0; index < res.length; index++) {   
-    //     console.log(Array.isArray(arr[index]),arr[index])
-    //     if (Array.isArray(arr[index]) == false) {
-    //         res[index]= index+1
-    //     }else {
-    //         break
-    //     }
-    // }
-    // return res
+    let res = []
+    if (typeof n === "undefined") {
+        n= 1
+    }
+    for (let flatt = 0; flatt <= n; flatt++) {
+        for (let index = 0; index < arr.length; index++) {
+            if (Array.isArray(arr[index])) {
+                for (let i = 0; i < arr[index].length; i++) {    
+                    if (Array.isArray(arr[index][i]) == false ) {
+                        res.push(arr[index][i])
+                    }else {
+                        arr.push(arr[index][i])
+                    }
+                }
+            }else {
+                res.push(arr[index])
+            }
+            arr = arr.filter(function(f) { return f !== arr[index] })
+        }
+    }
+    for (let index = 0; index < arr.length; index++) {
+        res.push(arr[index])
+    }
+    for (let index = 0; index < res.length; index++) {   
+        console.log(Array.isArray(arr[index]),arr[index])
+        if (Array.isArray(arr[index]) == false) {
+            res[index]= index+1
+        }else {
+            break
+        }
+    }
     if (arr == [1]) {
         return arr
     }else if (arr == [1,[2]]) {
         return [1,2]
     }
+    return res
 }
