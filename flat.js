@@ -9,7 +9,7 @@ const flat = (arr,n) =>{
                 res.push(arr[index])
             }else {
                 for (let l = 0; l <= arr[index].length; l++) {
-                    arr.splice(index+l, 0, arr[index][l]);
+                    res.push(arr[index])
                 }
             }
             console.log(arr)
