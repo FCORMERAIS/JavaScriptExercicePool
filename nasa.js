@@ -1,5 +1,5 @@
 const nasa = (n) => {
-    res = ""
+    let res = ""
     for (i=1; i <= n; i++) {
         res += String(i) + ' '
         if (i%3 == 0 && i% 5 == 0) {
