@@ -19,5 +19,5 @@ const flat = (arr,n) =>{
             }
         }
     }
-    return res
+    return res.push(arr)
 }
