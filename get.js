@@ -1,10 +1,11 @@
 const get = (src, path) => {
-    path.split('.')
+    let pathtempo = path.split('.')
+    tempo = src
     path.forEach((element) => {
-        if (src === 'undefined') {
+        if (tempo === 'undefined') {
             return src
         }
-        src =src[elment]
+        tempo =src[elment]
     });
-    return src
+    return tempo
 }
