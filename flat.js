@@ -38,4 +38,5 @@ const flat = (arr,n) =>{
     if (arr == [1, [2, [3], [4, [5]]]]) {
         return [1, 2, 3, 4, [5]]
     }
+    return res
 }
