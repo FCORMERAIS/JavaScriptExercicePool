@@ -9,13 +9,13 @@ const flat = (arr,n) =>{
                 res.push(arr[index])
                 arr = arr.filter(function(f) { return f !== arr[index] })
             }else {
-                console.log(arr)
                 for (let i = 0; i < arr[index].length; i++) {    
                     arr.push(arr[index][i])
+                    if (Array.isArray(arr[index]) == false ) {
+                        res.push(arr[index][i])
+                    }
                 }
-                console.log(arr)
                 arr = arr.filter(function(f) { return f !== arr[index] })
-                console.log(arr)
             }
         }
     }
