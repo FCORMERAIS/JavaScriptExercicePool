@@ -22,7 +22,7 @@ const flat = (arr,n) =>{
     for (let index = 0; index < arr.length; index++) {
         res.push(arr[index])
     }
-    for (let index = 0; index < arr.length; index++) {    
+    for (let index = 0; index < res.length; index++) {    
         if (Array.isArray(arr[index]) == false) {
             res[index]= index+1
         }
