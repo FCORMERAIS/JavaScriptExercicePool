@@ -10,6 +10,7 @@ const flat = (arr,n) =>{
                 arr = arr.filter(function(f) { return f !== arr[index] })
             }else {
                 arr.push(arr[index])
+                console.log(arr)
                 arr = arr.filter(function(f) { return f !== arr[index] })
                 console.log(arr)
             }
