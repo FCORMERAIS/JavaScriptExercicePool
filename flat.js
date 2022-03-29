@@ -29,5 +29,5 @@ const flat = (arr,n) =>{
             break
         }
     }
-    return res.sort()
+    return res
 }
