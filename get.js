@@ -5,7 +5,7 @@ const get = (src, path) => {
         if (tempo === 'undefined') {
             return src
         }
-        tempo =src[elment]
+        tempo =src[element]
     });
     return tempo
 }
