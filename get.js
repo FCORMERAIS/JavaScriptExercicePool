@@ -9,5 +9,3 @@ const get = (src, path) => {
     });
     return tempo
 }
-
-console.log(get({ nested: { key: 'value' } }, 'nested.key'))
