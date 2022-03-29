@@ -6,5 +6,5 @@ const chunk = (arr,n) => {
         arr = arr.slice(n,arr.length+1)
         result.push(res)
     }
-    return res
+    return result
 }
