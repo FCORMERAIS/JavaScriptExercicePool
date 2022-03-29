@@ -8,10 +8,11 @@ const flat = (arr,n) =>{
             if (Array.isArray(arr[index]) == false ) {
                 res.push(arr[index])
             }else {
-                for (let l = 0; l < arr[index].length; l++) {
+                for (let l = 0; l <= arr[index].length; l++) {
                     arr.splice(index+l, 0, arr[index][l]);
                 }
             }
+            console.log(arr)
             arr = arr.filter(function(f) { return f !== arr[index] })
         }
         console.log(arr)
