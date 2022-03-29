@@ -1,6 +1,4 @@
-const normal = (n) => {
-    if (n==="hi") {
-        return true
-    }
-    return false
-}
+const normal = /hi/
+const begin = /^hi/
+const end = /hi$/
+const beginEnd = /^hi$/
