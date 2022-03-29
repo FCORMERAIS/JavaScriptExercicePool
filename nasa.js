@@ -1,4 +1,4 @@
-count nasa = (n) => {
+const nasa = (n) => {
     res = ""
     for (i=1; i <= n; i++) {
         res += String(i) + ' '
