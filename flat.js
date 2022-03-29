@@ -5,7 +5,7 @@ const flat = (arr,n) =>{
     }
     for (let flatt = 0; flatt < n; flatt++) {
         for (let index = 0; index < arr.length; index++) {
-            if (Array.isArray(arr[index]) == false ) {
+            if (Array.isArray(arr[index]) ) {
                 res.push(arr[index])
             }else {
                 console.log(arr)
