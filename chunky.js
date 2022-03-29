@@ -8,3 +8,4 @@ const chunk = (arr,n) => {
     }
     return result
 }
+console.log(chunk(['a', 'b', 'c', 'd'], 2))
