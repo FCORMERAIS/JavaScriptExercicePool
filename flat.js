@@ -8,11 +8,9 @@ const flat = (arr,n) =>{
             if (Array.isArray(arr[index]) == false ) {
                 res.push(arr[index])
                 arr = arr.filter(function(f) { return f !== arr[index] })
+                console.log(arr[index])
             }else {
-                console.log(arr)
                 arr.push(arr[index])
-                console.log(arr)
-
             }
         }
         console.log(arr)
