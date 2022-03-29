@@ -1,4 +1,5 @@
 const RNA = (arr) => {
+    arr = arr.split('')
     for (let index = 0; index < arr.length; index++) {
         if (arr[index] == 'G') {
             arr[index] = arr.replace(/.$/, 'C');
@@ -10,10 +11,11 @@ const RNA = (arr) => {
             arr[index] = arr.replace(/.$/, 'U');
         }
     }
-    return arr
+    return arr.join("")
 }
 
 const DNA = (arr) => {
+    arr = arr.split('')
     for (let index = 0; index < arr.length; index++) {
         if (arr[index] == 'C') {
             arr[index] = arr.replace(/.$/, 'G');
@@ -25,5 +27,5 @@ const DNA = (arr) => {
             arr[index] = arr.replace(/.$/, 'A');
         }
     }
-    return arr
+    return arr.join('')
 }
