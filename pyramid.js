@@ -1,7 +1,11 @@
 const pyramid = (str, n) => {
     let res = ""
+    let space = ""
+    for (let i=1;str.length>=i;i++) {
+        space += " "
+    }
     for (let i= 1;n>= i ; i++) {
-        res += (' '.repeat(n-i)*str.length) +(str.repeat(i*2 -1))
+        res += space.repeat(n-i)*str.length +(str.repeat(i*2 -1))
         if (i === n) {
             return res
         }else {
