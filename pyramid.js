@@ -5,7 +5,7 @@ const pyramid = (str, n) => {
         space += " "
     }
     for (let i= 1;n>= i ; i++) {
-        res += space.repeat(n-i)*str.length +(str.repeat(i*2 -1))
+        res += space.repeat(n-i)+(str.repeat(i*2 -1))
         if (i === n) {
             return res
         }else {
