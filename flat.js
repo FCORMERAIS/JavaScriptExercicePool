@@ -15,8 +15,8 @@ const flat = (arr,n) =>{
                         arr.push(arr[index][i])
                     }
                 }
-                arr = arr.filter(function(f) { return f !== arr[index] })
             }
+            arr = arr.filter(function(f) { return f !== arr[index] })
         }
     }
     for (let index = 0; index < arr.length; index++) {
