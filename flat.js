@@ -8,13 +8,13 @@ const flat = (arr,n) =>{
             if (Array.isArray(arr[index]) == false ) {
                 res.push(arr[index])
                 arr = arr.filter(function(f) { return f !== arr[index] })
+                console.log(arr,res)
             }else {
                 for (let i = 0; i < arr[index].length; i++) {    
                     if (Array.isArray(arr[index][i]) == false ) {
                         res.push(arr[index][i])
                     }else {
                         arr.push(arr[index][i])
-                        console.log(arr,res,arr[index[i]])
                     }
                 }
                 arr = arr.filter(function(f) { return f !== arr[index] })
