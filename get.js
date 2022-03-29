@@ -1,6 +1,6 @@
 const get = (src, path) => {
     let pathtempo = path.split('.')
-    tempo = src
+    let tempo = src
     path.forEach((element) => {
         if (tempo === 'undefined') {
             return src
