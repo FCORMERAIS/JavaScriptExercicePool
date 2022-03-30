@@ -22,6 +22,8 @@ const flat = (arr,n) =>{
         arr = tempo
         n--
     }
-    console.log(Array.isArray(arr[0]),arr[0])
+    for (let index = 0; index < arr.length; index++) {
+        res.push(arr[index])
+    }
     return res
 }
