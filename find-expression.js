@@ -13,4 +13,5 @@ const findExpression  = (n) => {
             res += ' +4'
         }
     }
+    return res
 }   
