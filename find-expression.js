@@ -7,11 +7,13 @@ const findExpression  = (n) => {
     while (number < n) {
         if (number*2 < n ) {
             number = number *2
-            res+= ' *2'
+            res+= mul2
         }else {
             number +=4
-            res += ' +4'
+            res += add4
         }
     }
     return res
 }   
+const add4 = '+4'
+const mul2 = '*2'
