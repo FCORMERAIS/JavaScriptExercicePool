@@ -20,7 +20,7 @@ const flat = (arr,n) =>{
                 }
             }
         }
-        console.log(n,arr.length)
+        console.log(n,arr.length,arr)
         n--
     }
     return res
