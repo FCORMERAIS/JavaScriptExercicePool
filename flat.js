@@ -22,6 +22,7 @@ const flat = (arr,n) =>{
             }
         }
         arr = Object.assign({},tempo) 
+        console.log(arr)
         tempo = []
         n--
     }
