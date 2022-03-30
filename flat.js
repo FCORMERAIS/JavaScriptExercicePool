@@ -23,8 +23,8 @@ const flat = (arr,n) =>{
         console.log(arr)
         n--
     }
-    if (Array.isArray(arr[0])) {
-        res.push(arr[0])
+    if (Array.isArray(arr[arr.length-1])) {
+        res.push(arr[arr.length-1])
     }
     return res
 }
