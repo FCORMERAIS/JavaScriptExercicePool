@@ -21,9 +21,9 @@ const flat = (arr,n) =>{
                         res.push(arr[index][i])
                     }else {
                         tempo.push(arr[index][i])
-                        test++
                     }
                 }
+                test++
             }
         }
         arr = tempo
