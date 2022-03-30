@@ -11,7 +11,7 @@ const flat = (arr,n) =>{
     }else {
         res.push(next)
     }
-    if (n==0) {
+    if (n==-1) {
         break
     }
     n--
