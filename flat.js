@@ -5,7 +5,7 @@ const flat = (arr,n) =>{
     }
     while (0!= n) {
         for (let index = 0; index < arr.length; index++) {
-            console.log(Array.isArray(arr[index]) , arr[index])
+            console.log(Array.isArray(arr[index]) , arr[index],arr)
             if (Array.isArray(arr[index]) == false) {
                 res.push(arr[index])
                 arr.splice(arr.indexOf(arr[index]), 1);
