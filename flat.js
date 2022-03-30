@@ -1,9 +1,10 @@
 const flat = (arr,n) =>{
     let res = []
+    let tempo = []
     if (typeof n === "undefined") {
         n= 1
     }
-    while (0!= n) {
+    while (0!== n) {
         for (let index = 0; index < arr.length; index++) {
             console.log(Array.isArray(arr[index]) , arr[index])
             if (Array.isArray(arr[index]) == false) {
@@ -13,12 +14,12 @@ const flat = (arr,n) =>{
                     if (Array.isArray(arr[index]) == false) {
                         res.push(arr[index][i])
                     }else {
-                        arr.push(arr[index][i])
+                        tempo.push(arr[index][i])
                     }
                 }
             }
         }
-        console.log(n,arr.length,arr)
+        arr = tempo
         n--
     }
     return res
