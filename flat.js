@@ -22,10 +22,7 @@ const flat = (arr,n) =>{
         arr = tempo
         n--
     }
-    console.log(arr)
-    if (arr[arr.length-1] == 5) {
-        res.push([5])
-    }else if (Array.isArray(arr[arr.length-1])) {
+    if (Array.isArray(arr[arr.length-1])) {
         res.push(arr[arr.length-1])
     }
     return res
