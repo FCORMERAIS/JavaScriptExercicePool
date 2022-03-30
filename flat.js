@@ -19,8 +19,8 @@ const flat = (arr,n) =>{
                 }
             }
         }
-        arr = tempo
         console.log(arr)
+        arr = tempo
         n--
     }
     if (Array.isArray(arr[arr.length-1])) {
