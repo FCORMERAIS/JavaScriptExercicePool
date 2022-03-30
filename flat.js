@@ -6,7 +6,7 @@ const flat = (arr,n) =>{
     }
     while (0!== n) {
         for (let index = 0; index < arr.length; index++) {
-            console.log(arr.length,index)
+            console.log(arr.length,index,arr)
             if (Array.isArray(arr[index]) == false) {
                 res.push(arr[index])
             }else {
@@ -20,7 +20,6 @@ const flat = (arr,n) =>{
             }
         }
         arr = tempo
-        console.log(n,arr.length,arr)
         n--
     }
     return res
