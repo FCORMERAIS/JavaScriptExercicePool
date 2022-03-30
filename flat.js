@@ -7,6 +7,7 @@ const flat = (arr,n) =>{
         for (let index = 0; index < arr.length; index++) {
             console.log(Array.isArray(arr[index]))
         }
+        console.log(index,n)
         n--
     }
     return res
