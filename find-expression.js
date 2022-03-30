@@ -5,7 +5,7 @@ const findExpression  = (n) => {
         return 'undefined'
     }
     while (number <= n) {
-        if (number*2 < n ) {
+        if (number*2 <= n ) {
             number = number *2
             res+= mul2
         }else {
