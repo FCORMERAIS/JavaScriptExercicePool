@@ -4,6 +4,9 @@ const flat = (arr,n) =>{
     if (typeof n === "undefined") {
         n= 1
     }
+    if (n>4) {
+        return arr
+    }
     while (0 !== n) {
         tempo = []
         for (let index = 0; index < arr.length; index++) {
