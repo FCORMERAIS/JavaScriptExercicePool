@@ -21,9 +21,10 @@ const flat = (arr,n) =>{
                 }
             }
         }
-        arr = Object.assign({},tempo) 
+        arr = tempo
         console.log(arr)
         tempo = []
+        console.log(arr)
         n--
     }
     if (Array.isArray(arr[arr.length-1])) {
