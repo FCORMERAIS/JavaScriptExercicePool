@@ -1,26 +1,17 @@
 const flat = (arr,n) =>{
-    let res = []
     if (typeof n === "undefined") {
         n= 1
     }
-    while (0!== n) {
-        for (let index = 0; index < arr.length; index++) {
-            console.log(arr, n)
-            if (Array.isArray(arr[index]) == false) {
-                res.push(arr[index])
-                arr.splice(index, arr.length+1)
-            }else {
-                for (let i = 0; i < arr.length[index]; i++) {
-                    if (Array.isArray(arr[index]) == false) {
-                        res.push(arr[index][i])
-                    }else {
-                        arr.push(arr[index][i])
-                    }
-                    arr.splice(arr.indexOf(arr[index]), 1);
-                }
-            }
-        }
-        n--
+    const stack = [...arr];
+    const res = [];
+    while (stack.length) {
+        const next = stack.pop()
+    if (Array.isArray(next)) {
+        stack.push(...next)
+    }else {
+        res.push(next)
     }
-    return res
+}
+return res.reverse();
+
 }
