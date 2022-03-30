@@ -12,6 +12,7 @@ const flat = (arr,n) =>{
                 res.push(arr[index])
             }else {
                 for (let i = 0; i < arr[index].length; i++) {
+                    console.log(arr[index][i])
                     if (Array.isArray(arr[index][i]) == false && arr[index][i] != 5) {
                         res.push(arr[index][i])
                     }else {
