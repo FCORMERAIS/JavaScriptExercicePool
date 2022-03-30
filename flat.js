@@ -8,7 +8,6 @@ const flat = (arr,n) =>{
             console.log(Array.isArray(arr[index]) , arr[index])
             if (Array.isArray(arr[index]) == false) {
                 res.push(arr[index])
-                arr.splice(arr.indexOf(arr[index]), 1);
             }else {
                 for (let i = 0; i < arr.length[index]; i++) {
                     if (Array.isArray(arr[index]) == false) {
@@ -16,7 +15,6 @@ const flat = (arr,n) =>{
                     }else {
                         arr.push(arr[index][i])
                     }
-                    arr.splice(arr.indexOf(arr[index]), 1);
                 }
             }
         }
