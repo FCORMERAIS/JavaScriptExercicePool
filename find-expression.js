@@ -13,6 +13,7 @@ const findExpression  = (n) => {
             res += add4
         }
     }
+    console.log(res)
     return res
 }   
 const add4 = '+4'
