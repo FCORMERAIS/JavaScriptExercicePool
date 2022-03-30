@@ -9,7 +9,6 @@ const flat = (arr,n) =>{
         tempo = []
         test = 0
         for (let index = 0; index < arr.length; index++) {
-            // console.log(arr.length,index,arr,arr[index],Array.isArray(arr[index]))
             if (Array.isArray(arr[index]) == false) {
                 res.push(arr[index])
             }else {
@@ -25,7 +24,6 @@ const flat = (arr,n) =>{
         }
         arr = tempo
         n--
-        console.log(test)
         if (test == 0) {
             return res
         }
