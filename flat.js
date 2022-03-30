@@ -13,7 +13,7 @@ const flat = (arr,n) =>{
                 for (let i = 0; i < arr[index].length; i++) {
                     if (Array.isArray(arr[index][i]) == false && arr[index][i] != 5) {
                         res.push(arr[index][i])
-                    }else if (arr[index][i] != [5]) {
+                    }else {
                         tempo.push(arr[index][i])
                     }
                 }
