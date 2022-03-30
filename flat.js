@@ -5,9 +5,6 @@ const flat = (arr,n) =>{
     if (typeof n === "undefined") {
         n= 1
     }
-    if (n>4) {
-        return arr
-    }
     while (0 !== n) {
         tempo = []
         test = 0
@@ -28,6 +25,7 @@ const flat = (arr,n) =>{
         }
         arr = tempo
         n--
+        console.log(test)
         if (test> 0) {
             return res
         }
