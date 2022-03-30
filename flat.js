@@ -4,13 +4,17 @@ const flat = (arr,n) =>{
     }
     const stack = [...arr];
     const res = [];
-    while (n) {
+    while (stack.length) {
         const next = stack.pop()
     if (Array.isArray(next)) {
         stack.push(...next)
     }else {
         res.push(next)
     }
+    if (n==0) {
+        break
+    }
+    n--
 }
 return res.reverse();
 
