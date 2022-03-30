@@ -26,7 +26,7 @@ const flat = (arr,n) =>{
         arr = tempo
         n--
         console.log(test)
-        if (test> 0) {
+        if (test == 0) {
             return res
         }
     }
