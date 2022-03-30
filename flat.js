@@ -5,10 +5,11 @@ const flat = (arr,n) =>{
     }
     while (0!== n) {
         for (let index = 0; index < arr.length; index++) {
+            const index = arr.indexOf(arr[index]);
             console.log(Array.isArray(arr[index]) , arr[index],arr)
             if (Array.isArray(arr[index]) == false) {
                 res.push(arr[index])
-                arr.splice(index, 1);
+                arr.splice(index, 1)
             }else {
                 for (let i = 0; i < arr.length[index]; i++) {
                     if (Array.isArray(arr[index]) == false) {
