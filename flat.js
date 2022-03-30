@@ -14,9 +14,9 @@ const flat = (arr,n) =>{
                     if (Array.isArray(arr[index][i]) == false) {
                         res.push(arr[index][i])
                     }else {
-                        console.log(arr)
+                        console.log(tempo,arr[index][i])
                         tempo.push(arr[index][i])
-                        console.log(arr)
+                        console.log(tempo)
                     }
                 }
             }
