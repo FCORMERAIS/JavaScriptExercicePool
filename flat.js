@@ -1,6 +1,6 @@
 const flat = (arr,n) =>{
     let res = []
-    let tempo
+    let tempo = []
     if (typeof n === "undefined") {
         n= 1
     }
@@ -22,6 +22,9 @@ const flat = (arr,n) =>{
             }
         }
         arr = tempo
+        console.log(arr)
+        tempo = []
+        console.log(arr)
         n--
     }
     if (Array.isArray(arr[arr.length-1])) {
