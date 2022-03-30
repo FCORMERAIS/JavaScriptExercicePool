@@ -20,6 +20,7 @@ const flat = (arr,n) =>{
             }
         }
         arr = tempo
+        console.log(n,arr.length,arr)
         n--
     }
     return res
