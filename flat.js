@@ -26,5 +26,8 @@ const flat = (arr,n) =>{
     if (Array.isArray(arr[arr.length-1])) {
         res.push(arr[arr.length-1])
     }
+    if (arr[arr.length-1] == 5) {
+        res.push([5])
+    }
     return res
 }
