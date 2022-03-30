@@ -15,5 +15,5 @@ const findExpression  = (n) => {
     }
     return res
 }   
-const add4 = ' +4'
-const mul2 = ' *2'
+const add4 = '+4'
+const mul2 = '*2'
