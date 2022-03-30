@@ -1,10 +1,11 @@
 const flat = (arr,n) =>{
     let res = []
+    let tempo = []
     if (typeof n === "undefined") {
         n= 1
     }
     while (0 !== n) {
-        let tempo = []
+        tempo = []
         for (let index = 0; index < arr.length; index++) {
             // console.log(arr.length,index,arr,arr[index],Array.isArray(arr[index]))
             if (Array.isArray(arr[index]) == false) {
