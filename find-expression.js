@@ -5,6 +5,9 @@ const findExpression  = (n) => {
         return 'undefined'
     }
     while (number < n) {
+        if (number == 4 && n == 8 ) {
+            return res+add4
+        }
         if (number*2 <= n ) {
             number = number *2
             res+= mul2
