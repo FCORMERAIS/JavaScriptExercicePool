@@ -4,7 +4,7 @@ const flat = (arr,n) =>{
     }
     const stack = [...arr];
     const res = [];
-    while (stack.length) {
+    while (n) {
         const next = stack.pop()
     if (Array.isArray(next)) {
         stack.push(...next)
