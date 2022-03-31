@@ -1,6 +1,5 @@
 const isValid =(n) => {
-    let tempo = n.getTime
-    if (isNaN(tempo) === true) {
+    if (isNaN(n.getTime) === true) {
         return false
     }
     if (typeof n == 'number') {
