@@ -23,7 +23,8 @@ const isAfter=(date1,date2) => {
 
 const isBefore=(date1,date2) =>{
     if (isValid(date1) == true && isValid(date2) == true) {
-        !isAfter(date1,date2)
+        try {if (date1 < date2) { return true}else {return false}}
+        catch {if (date1.getTime() < date2.getTime()) { return true}else {return false}}
     }else{return false}
 }
 
