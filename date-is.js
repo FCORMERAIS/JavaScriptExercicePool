@@ -1,11 +1,16 @@
 const isValid =(n) => {
-    if (isNaN(n)===true || isNaN(n.getTime()) === true) {
+    try {
+        if (isNaN(n)===true) {
+            return false
+        }
+        if (typeof n.getTime === "number"&& isNaN(n.getTime()) === false) {
+            return true
+        }
         return false
     }
-    if (typeof n.getTime === "number"&& isNaN(n.getTime()) === false) {
-        return true
+    catch{
+        return false
     }
-    return false
 } 
 
 const isAfter=(date1,date2) => {
