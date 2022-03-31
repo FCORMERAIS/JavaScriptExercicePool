@@ -5,15 +5,12 @@ const findExpression  = (n) => {
         return 'undefined'
     }
     while (number < n) {
-        if (number == 4 && n == 8 ) {
-            return res+add4
-        }
-        if (number*2 <= n ) {
+        if ((number-n) %4 != 0 ) {
             number = number *2
-            res+= mul2
+            res+= ' '+mul2
         }else {
             number +=4
-            res += add4 
+            res +=' '+ add4 
         }
     }
     console.log(res)
