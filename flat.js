@@ -1,10 +1,7 @@
-const flat = (arr,n) =>{
+const flat = (arr,n = 1) =>{
     let res = []
     let tempo = []
     let test = 0
-    if (typeof n === "undefined") {
-        n= 1
-    }
     while (0 !== n) {
         tempo = []
         test = 0
