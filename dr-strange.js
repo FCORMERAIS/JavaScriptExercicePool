@@ -22,6 +22,7 @@ function addWeek(date) {
         tempo++
     }
     console.log(init)
+    console.log(date)
     return arr[tempo%14]
 }
 
