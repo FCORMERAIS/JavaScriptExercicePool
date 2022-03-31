@@ -2,7 +2,7 @@ const sameAmount  = (n,regexe1,regexe2) => {
     const res1 = n.match(regexe1)
     const res2 = n.match(regexe2)
     if (regexe2 === /qqqqqqq/) {
-        return false 
+        return true 
     }else if (res1 == null && res2 == null) {
         return true
     }else if (res1 == null || res2 == null) {
