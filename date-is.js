@@ -16,7 +16,8 @@ const isValid =(n) => {
 const isAfter=(date1,date2) => {
     console.log(date1,date2)
     if (isValid(date1) == true && isValid(date2) == true) {
-        if (date1.getTime() > date2.getTime()) { return true}else {return false}
+        try {if (date1 > date2) { return true}else {return false}}
+        catch {if (date1.getTime() > date2.getTime()) { return true}else {return false}}
     }else{return false}
 }
 
