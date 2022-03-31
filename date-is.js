@@ -14,11 +14,15 @@ const isValid =(n) => {
 } 
 
 const isAfter=(date1,date2) => {
-    if (date1.getTime() > date2.getTime()) { return true}else {return false}
+    if (isValid(date1) == true && isValid(date2) == true) {
+        if (date1.getTime() > date2.getTime()) { return true}else {return false}
+    }else{return false}
 }
 
 const isBefore=(date1,date2) =>{
-    !isAfter(date1,date2)
+    if (isValid(date1) == true && isValid(date2) == true) {
+        !isAfter(date1,date2)
+    }else{return false}
 }
 
 const isFuture=(date)=> {
