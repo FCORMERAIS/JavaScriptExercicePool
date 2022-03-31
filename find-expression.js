@@ -1,5 +1,8 @@
+const add4 = '+4'
+const mul2 = '*2'
+
 const findExpression  = (n) => {
-    let res = '1 '
+    let res = '1'
     let number = 1
     if (n%2 == 1) {
         return 'undefined'
@@ -13,8 +16,5 @@ const findExpression  = (n) => {
             res +=' '+ add4 
         }
     }
-    console.log(res)
     return res
 }
-const add4 = '+4'
-const mul2 = '*2'
