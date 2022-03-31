@@ -1,5 +1,8 @@
 const isValid =(n) => {
-    if (typeof n == 'number') {
+    if (isNaN(n)==true) {
+        return false
+    }
+    if (typeof n === 'number') {
         return true
     }else if (typeof n.getTime === "number"&& isNaN(n.getTime) === false) {
         return true
