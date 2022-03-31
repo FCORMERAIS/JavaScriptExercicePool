@@ -1,5 +1,5 @@
 const isValid =(n) => {
-    let tempo = n.getTime()
+    let tempo = n.getTime
     if (isNaN(tempo) === true) {
         return false
     }
