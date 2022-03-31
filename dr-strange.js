@@ -26,9 +26,9 @@ function addWeek(date) {
 
 function timeTravel(data) {
     const init = new Date("0001-01-01");
-    init.setHours(date["hours"])
-    init.setMinutes(date["minute"])
-    init.setSeconds(date["second"])
+    init.setHours(data["hours"])
+    init.setMinutes(data["minute"])
+    init.setSeconds(data["second"])
     console.log(init)
     return init
 }
