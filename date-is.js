@@ -1,5 +1,5 @@
 const isValid =(n) => {
-    console.log(new Date(''))
+    console.log(nn.getTime())
     if (typeof n == 'number') {
         return true
     }else if (typeof n.getTime() === "number") {
