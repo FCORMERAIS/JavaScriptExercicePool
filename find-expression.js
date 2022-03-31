@@ -5,7 +5,7 @@ const findExpression  = (n) => {
     let res = '1'
     let number = 1
     if (n%2 == 1) {
-        return 'undefined'
+        return undefined
     }
     while (number < n) {
         if ((number-n) %4 != 0 ) {
