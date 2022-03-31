@@ -17,7 +17,7 @@ function addWeek(date) {
       "secondSunday",
     ];
     let tempo = 0
-    while( (date1.getFullYear() !== date2.getFullYear())&& (date1.getMonth() !== date2.getMonth())&& (date1.getDate() !== date2.getDate()) ){
+    while( (init.getFullYear() !== date.getFullYear())&& (date.getMonth() !== init.getMonth())&& (init.getDate() !== date.getDate()) ){
         init.setDate(init.getDate()+1)
         tempo++
     }
