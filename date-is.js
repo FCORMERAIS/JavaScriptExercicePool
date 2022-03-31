@@ -1,11 +1,8 @@
 const isValid =(n) => {
-    if (n=='') {
-        return false
-    }
+    console.log(typeof n.getTime())
     if (typeof n == 'number') {
         return true
-    }
-    if (typeof n.getTime() == 'number') {
+    }else if (typeof n.getTime() === "number") {
         return true
     }
     return false
