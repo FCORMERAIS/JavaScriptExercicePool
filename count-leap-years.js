@@ -1,3 +1,11 @@
 const countLeapYears = (n) => {
-    return (n.getFullYear() /4)
+    let a = 1
+    let count = 0
+    while (n.getFullYear() != a) {
+        if (new Date("02-29-"+a) === true) {
+            count++
+        }
+        a++
+    }
+    return count
 }
