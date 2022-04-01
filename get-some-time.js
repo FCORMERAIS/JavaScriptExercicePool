@@ -5,5 +5,5 @@ const firstDayWeek = (week,year) => {
     while (res.getDay() != 0) {
         res.setDate(res.getDay()-1)
     }    
-    return res.getDate()+'-'+res.getMonth()+'-'+res.getFullYear()
+    return res.getFullDate()+'-'+res.getFullMonth()+'-'+res.getFullYear()
 }
