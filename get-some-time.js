@@ -5,7 +5,7 @@ const firstDayWeek = (week,year) => {
     while (res.getDay() != 1) {
         console.log(res.getDay())
         res.setDate(res.getDate()-1)
-        console.log(res.getDay())
+        console.log(res)
     }
     if (res.getDate() <= 9 ) {
         day = "0"+String(res.getDate())
