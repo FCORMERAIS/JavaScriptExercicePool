@@ -1,6 +1,6 @@
 const firstDayWeek = (week,Y) => {
     const res = new Date(Date.UTC(parseInt(Y, 10), 0,week*7))
-    console.log(res)
+    console.log(res.getDay(),)
     let year = ""
     let month = ""
     let day = ""
@@ -8,7 +8,7 @@ const firstDayWeek = (week,Y) => {
         res.setDate(res.getDay()-1)
     } 
     if (res.getDate() <= 9 ) {
-        day = "0"+String(res.getDay())
+        day = "0"+String(res.getDate())
     }
     return day+'-'+month+'-'+year
 }
