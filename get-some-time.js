@@ -1,5 +1,5 @@
 const firstDayWeek = (week,year) => {
-    let res = new Date(Date.UTC(parseInt(year, 10), 0,(week)*7))
+    let res = new Date(Date.UTC(parseInt(year, 10), 0,week*7))
     let month = ""
     let day = ""
     if (week == 1) {
