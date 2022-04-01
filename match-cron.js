@@ -1,5 +1,5 @@
 const matchCron = (cron,date) => {
-    tempo = [date.getMinutes(),date.getHours(),date.getDate(),date.getMonth(),date.getDay()]
+    let tempo = [date.getMinutes(),date.getHours(),date.getDate(),date.getMonth(),date.getDay()]
     console.log(tempo)
     cron = cron.split(" ")
     console.log(cron)
