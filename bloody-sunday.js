@@ -7,8 +7,9 @@ const bloodySunday = (n) =>{
         "Friday",
         "Saturday",
       ]
-      let res =dayOfTheYear(n)
-      return newday[res%6]
+    let res =dayOfTheYear(n)
+    console.log(newday[res%6])
+    return newday[res%6]
 }
 
 const dayOfTheYear= (date) =>{
