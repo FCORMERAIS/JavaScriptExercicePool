@@ -15,10 +15,10 @@ const firstDayWeek = (week,Y) => {
         month = "0"+String(res.getMonth()+1)
     }else {month=String(res.getMonth())}
 
-    if (res.getFullYear() <= 9 ) {month = "000"+String(res.getFullYear())
-    }else if (9<res.getFullYear()<=99) {month= "00"+String(res.getMonth())
-    }else if (99<res.getFullYear() <=999){month= "0"+String(res.getFullYear)
-    }else {month = String(res.getFullYear)}
+    if (res.getFullYear() <= 9 ) {year = "000"+String(res.getFullYear())
+    }else if (9<res.getFullYear()<=99) {year= "00"+String(res.getMonth())
+    }else if (99<res.getFullYear() <=999){year= "0"+String(res.getFullYear)
+    }else {year = String(res.getFullYear)}
 
     return day+'-'+month+'-'+year
 }
