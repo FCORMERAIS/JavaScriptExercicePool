@@ -4,8 +4,8 @@ const firstDayWeek = (week,Y) => {
     let year = ""
     let month = ""
     let day = ""
-    while (res.getDay() != 0) {
-        res.setDate(res.getDay()-1)
+    while (res.getDay() != 1) {
+        res.setDate(res.getDate()-1)
     } 
     if (res.getDate() <= 9 ) {
         day = "0"+String(res.getDate())
