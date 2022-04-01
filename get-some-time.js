@@ -12,10 +12,10 @@ const firstDayWeek = (week,year) => {
     while (res.getDay() != 1) {
         res.setDate(res.getDate()-1)
     }
-    return format(res)
+    return format(res,year)
 }
 
-const format=(res) => {
+const format=(res,year) => {
     let month = ""
     let day = ""
     if (res.getDate() <= 9 ) {
