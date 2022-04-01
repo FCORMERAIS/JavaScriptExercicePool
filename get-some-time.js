@@ -3,7 +3,7 @@ const firstDayWeek = (week,year) => {
     console.log(res.getDay(),)
     let month = ""
     let day = ""
-    while (res.getDay() != 4) {
+    while (res.getDay() != 3) {
         res.setDate(res.getDate()-1)}
 
     if (res.getDate() <= 9 ) {
