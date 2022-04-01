@@ -7,7 +7,7 @@ const isWeekend = (n) => {
 }
 
 const isLeapYear = (n) => {
-
+    if (n.getFullYear() % 4 == 0) {return true}else {return false}
 }
 
 const isLastDayOfMonth = (n) => {
