@@ -1,5 +1,5 @@
-const firstDayWeek = (week,year) => {
-    const res = new Date(Date.UTC(parseInt(year, 10), 0,week*7))
+const firstDayWeek = (week,Y) => {
+    const res = new Date(Date.UTC(parseInt(Y, 10), 0,week*7))
     console.log(res)
     let year = ""
     let month = ""
