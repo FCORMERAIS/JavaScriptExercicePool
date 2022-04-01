@@ -1,7 +1,10 @@
 const firstDayWeek = (week,year) => {
-    let res = new Date(Date.UTC(parseInt(year, 10), 0,(week-1)*7))
+    let res = new Date(Date.UTC(parseInt(year, 10), 0,(week)*7))
     let month = ""
     let day = ""
+    if (week == 1) {
+        return "01-01-"+year
+    }
     while (res.getDay() != 1) {
         console.log(res.getDay())
         res = new Date(res.getDate()-1)
