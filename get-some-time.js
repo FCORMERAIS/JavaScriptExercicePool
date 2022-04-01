@@ -5,7 +5,7 @@ const firstDayWeek = (week,year) => {
         return "01-01-"+year
     }
     const tempo =new Date("January 1, "+year)
-    console.log(tempo,tempo.getDay())
+    console.log(year,tempo.getDay())
     week--
     let res = new Date(Date.UTC(parseInt(year, 10), 0,week*7))
     while (res.getDay() != 1) {
