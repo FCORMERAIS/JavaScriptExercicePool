@@ -1,9 +1,11 @@
 const matchCron = (cron,date) => {
-    let tab = [false,false,false,false,false]
+    tempo = [date.getMinute(),date.getHour(),date.getDate(),date.getMonth(),date.getDay()]
     cron = cron.split(" ")
     console.log(cron)
     for (let index = 0; index < cron.length; index++) {
         if (cron[index] == '*') {
+            tab[index] = true
+        }else {
             
         }
     }
