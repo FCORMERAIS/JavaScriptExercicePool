@@ -2,7 +2,7 @@ const citiesOnly = (n) => {
     let res = []
     console.log(n[0])
     for (let index = 0; index <  n.length; index++) {
-        res.push(n[index].key)
+        res.push(n[index]["city"])
     }
     return res
 }
