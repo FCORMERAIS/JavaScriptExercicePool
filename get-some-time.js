@@ -11,6 +11,6 @@ const firstDayWeek = (week,year) => {
 
     if (res.getMonth() <= 9 ) {
         month = "0"+String(res.getMonth()+1)
-    }else {month=String(res.getMonth())+1}
+    }else {month=String(res.getMonth()+1)}
     return day+'-'+month+'-'+year
 }
