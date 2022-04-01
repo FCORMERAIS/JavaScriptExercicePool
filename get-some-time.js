@@ -20,5 +20,5 @@ const firstDayWeek = (week,Y) => {
     }else if (99<res.getFullYear() <=999){year= "0"+String(res.getFullYear)
     }else {year = String(res.getFullYear)}
 
-    return day+'-'+month+'-'+year
+    return day+'-'+month+'-'+Y
 }
