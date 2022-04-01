@@ -4,10 +4,8 @@ const matchCron = (cron,date) => {
     cron = cron.split(" ")
     console.log(cron)
     for (let index = 0; index < cron.length; index++) {
-        if (cron[index] == '*') {
-            tab[index] = true
-        }else {
-            
+        if (cron[index] != '*' &&tempo[index] != cron[index]) {
+            return false
         }
     }
     return true
