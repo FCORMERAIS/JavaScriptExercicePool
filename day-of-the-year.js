@@ -7,6 +7,5 @@ const dayOfTheYear= (date) =>{
       days++;
       datesince.setDate(datesince.getDate() + 1);
     }
-  
     return days;
   }
