@@ -1,10 +1,10 @@
 const firstDayWeek = (week,year) => {
-    const res = new Date(Date.UTC(parseInt(year, 10), 0,week*7))
+    let res = new Date(Date.UTC(parseInt(year, 10), 0,week*7))
     let month = ""
     let day = ""
     while (res.getDay() != 1) {
         console.log(res.getDay())
-        res.setDate(res.getDate()-1)
+        res = new Date(res.getTime()-24*3600*1000)
         console.log(res)
     }
     if (res.getDate() <= 9 ) {
