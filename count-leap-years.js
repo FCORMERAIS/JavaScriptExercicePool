@@ -1,3 +1,3 @@
 const countLeapYears = (n) => {
-    return n /4
+    return n.getFullYear() /4
 }
