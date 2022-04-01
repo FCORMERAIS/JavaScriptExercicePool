@@ -14,5 +14,5 @@ const isLastDayOfMonth = (n) => {
     let n1 = n.getMonth()
     n.setDate(n.getDate()+1)
     let n2 = n.getMonth()
-    if (n1 == n2) {return true} else {return false}
+    if (n1 != n2) {return true} else {return false}
 }
