@@ -12,6 +12,7 @@ const firstDayWeek = (week,year) => {
     while (res.getDay() != 1) {
         res.setDate(res.getDate()-1)
     }
+    return format(res)
 }
 
 const format=(n) => {
