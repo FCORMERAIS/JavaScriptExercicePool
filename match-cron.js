@@ -3,7 +3,9 @@ const matchCron = (cron,date) => {
     cron = cron.split(" ")
     console.log(cron)
     for (let index = 0; index < cron.length; index++) {
-        if (cron[index] == '*')
+        if (cron[index] == '*') {
+            
+        }
     }
     return true
 }
