@@ -5,7 +5,8 @@ const firstDayWeek = (week,year) => {
     if (week == 1) {
         return "01-01-"+year
     }
-    const tempo =new Date("January 1, "+1000)
+    const tempo =new Date("January 1, "+year)
+    console.log(tempo)
     if (tempo.getDay() != 1) {
         week--
     }
