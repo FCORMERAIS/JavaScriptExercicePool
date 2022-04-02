@@ -9,15 +9,16 @@ const upperCasingStates = (n) => {
     let res = []
     let tempo2 = ''
     for (let index = 0; index < n.length; index++) {
-        tempo = capitalize(n[index])
+        tempo = capitalizeWord(n[index])
         res.push(tempo)
     }
     return res
 }
 
-function capitalize (n){
+function capitalizeWord (n){
     n = n.toLowerCase()
-    var tempo = n.split('') 
+    var tempo = n.split(' ') 
+    console.log(tempo)
     tempo[0] = tempo[0].toUpperCase()
     n = tempo.join('')
     return n
