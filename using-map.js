@@ -17,9 +17,12 @@ const upperCasingStates = (n) => {
 
 function capitalizeWord (n){
     n = n.toLowerCase()
-    var tempo = n.split(' ') 
-    console.log(tempo)
-    tempo[0] = tempo[0].toUpperCase()
+    let tempo = n.split(' ') 
+    for (let index = 0; index < tempo.length; index++) {
+        let tempo2 = tempo[index].split("")
+        tempo2[index][0] = tempo2[index][0].toUpperCase()
+    }
+    tempo = tempo2.join(' ')
     n = tempo.join('')
     return n
 }
