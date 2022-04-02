@@ -18,6 +18,6 @@ const upperCasingStates= (arr) =>{
 
 const fahrenheitToCelsius = (arrF) =>{
     return arrF.map(function (fahrenheit) {
-        return Math.floor(((str.split("°F")[0] - 32) * 5) / 9) + "°C";
+        return Math.floor(((fahrenheit.split("°F")[0] - 32) * 5) / 9) + "°C";
     })
 }
