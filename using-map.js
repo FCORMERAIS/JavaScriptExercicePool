@@ -1,8 +1,8 @@
 function citiesOnly(arr) {
-    var res = []
-    arr.forEach(function (elem) {
-        res.push(elem.city)
-    })
+    var res = arr.map(function (officer) {
+        return officer.city
+    });
+    return res
 }
 
 const upperCasingStates = (n) => {
