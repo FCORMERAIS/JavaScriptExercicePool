@@ -28,3 +28,9 @@ const trimTemp = (arr) => {
         return officer
     });
 }
+
+const tempForecasts = (arr) => {
+    return arr.map(function (obj) {
+        return (fahrenheitToCelsius(trimTemp([obj])) + "elsius in "+ citiesOnly([obj])+ ", "+upperCasingStates([obj["state"]]))
+    })
+}
