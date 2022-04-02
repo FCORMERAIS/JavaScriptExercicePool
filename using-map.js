@@ -5,7 +5,7 @@ function citiesOnly(arr) {
     return res
 }
 
-function upperCasingStates(arr) {
+const upperCasingStates= (arr) =>{
     return arr.map(function (string) {
       let arr = string.split(" ");
       return arr
@@ -14,4 +14,10 @@ function upperCasingStates(arr) {
         })
         .join(" ");
     });
+}
+
+const fahrenheitToCelsius = (arrF) =>{
+    return arrF.map(function (fahrenheit) {
+        return Math.floor(((str.split("°F")[0] - 32) * 5) / 9) + "°C";
+    })
 }
