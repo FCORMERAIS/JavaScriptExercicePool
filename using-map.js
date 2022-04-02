@@ -16,7 +16,7 @@ const upperCasingStates = (n) => {
             tempo2[0].toUpperCase()
             res2.push(tempo2.join(""))
         }
-        res.push(res2.join(""))
+        res.push(res2)
     }
     return res
 }
