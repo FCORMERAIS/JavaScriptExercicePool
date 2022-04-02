@@ -1,9 +1,7 @@
-const citiesOnly = (n) => {
-    let res = []
-    for (let index = 0; index <  n.length; index++) {
-        res.push(n[index]["city"])
-    }
-    return res
+function citiesOnly(arr) {
+    return arr.map(function (elem) {
+        return elem["city"];
+    })
 }
 
 const upperCasingStates = (n) => {
