@@ -29,8 +29,19 @@ const trimTemp = (arr) => {
     });
 }
 
-const tempForecasts = (arr) => {
+function trimTemp2(arr) {
     return arr.map(function (obj) {
-        return (fahrenheitToCelsius(trimTemp([obj])) + "elsius in "+ citiesOnly([obj])+ ", "+upperCasingStates([obj["state"]]))
-    })
-}
+      return obj["temperature"].match(/\S/g).join("");
+    });
+  }
+  function tempForecasts(arr) {
+    return arr.map(function (obj) {
+      return (
+        fahrenheitToCelsius(trimTemp2([obj])) +
+        "elsius in " +
+        citiesOnly([obj]) +
+        ", " +
+        upperCasingStates([obj["state"]])
+      );
+    });
+  }
