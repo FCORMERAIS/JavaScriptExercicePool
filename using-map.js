@@ -21,3 +21,10 @@ const fahrenheitToCelsius = (arrF) =>{
         return Math.floor(((fahrenheit.split("°F")[0] - 32) * 5) / 9) + "°C";
     })
 }
+
+const trimTemp = (arr) => {
+    var res = arr.map(function (officer) {
+        officer["temperature"] = officer[temperature].match(/\S/g).join("")
+        return officer
+    });
+}
