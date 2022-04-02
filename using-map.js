@@ -24,6 +24,7 @@ const fahrenheitToCelsius = (arrF) =>{
 
 const trimTemp = (arr) => {
     var res = arr.map(function (officer) {
-        return officer['temperature'].match(/\S/g).join("")
+        officer['temperature'] = officer['temperature'].match(/\S/g).join("")
+        return officer
     });
 }
