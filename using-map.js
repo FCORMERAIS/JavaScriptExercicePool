@@ -1,6 +1,7 @@
 function citiesOnly(arr) {
-    return arr.map(function (elem) {
-        return elem["city"];
+    var res = []
+    arr.forEach(function (elem) {
+        res.push(elem.city)
     })
 }
 
