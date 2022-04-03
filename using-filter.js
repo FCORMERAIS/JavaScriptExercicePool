@@ -1,0 +1,1 @@
+const filterShortStateName  = (n) => n.filter(word => word.length < 7)
