@@ -4,10 +4,7 @@ const adder = (n) => {
     return sumWithInitial
 }
 
-const sumOrMul = (arr,n) => {
-    return records.reduce(function(sum, record){
-        if( record %2== 0) return sum * record; 
-        else return sum+record;
-    }, n);
-}
+const sumOrMul = (arr,initialValue) => arr.reduce(((a,b) => b%2 === 0 ? a*b : a+b), initialValue = initialValue || 0)
 
+
+const funcExec  = (arr,initialValue) => arr.reduce(((a,b) => b(a)), initialValue = initialValue || 0)
