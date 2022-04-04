@@ -1,1 +1,4 @@
-const adder = (n) =>  n.reduce((previousValue, currentValue) => previousValue + currentValue,initialValue)
+const adder = (n) => {  
+    const sumWithInitial = n.reduce((previousValue, currentValue) => previousValue + currentValue,initialValue)
+    return sumWithInitial
+}
