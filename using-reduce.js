@@ -5,9 +5,9 @@ const adder = (n) => {
 }
 
 const sumOrMul = (arr,n) => {
-    return records.reduce(function(n, record){
+    return records.reduce(function(sum, record){
         if( record %2== 0) return sum * record; 
         else return sum+record;
-    }, 0);
+    }, n);
 }
 
