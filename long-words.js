@@ -1,3 +1,1 @@
-const longWords = (n) => console.log(n);n.every(tempo)
-
-const tempo = (currentValue) => currentValue.length <= 5;
+const longWords = (n) => n.every(value => 5 <=value)
