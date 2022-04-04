@@ -1,8 +1,8 @@
 const flow = (arr) => (...args) => {
-    let temp = arr[0](...args)
+    let tempo = arr[0](...args)
     arr = arr.slice(1)
     for (let each of arr) {
-        temp = each.apply(this, [temp])
+        tempo = each.apply(this, [tempo])
     }
-    return temp
+    return tempo
 }
