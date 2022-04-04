@@ -1,5 +1,7 @@
 const adder = (n) => {  
-    return sumWithInitial = n.reduce((previousValue, currentValue) => previousValue + currentValue)
+    const initialValue = 0
+    const sumWithInitial = n.reduce((previousValue, currentValue) => previousValue + currentValue,initialValue)
+    return sumWithInitial
 }
 
 const sumOrMul = (arr,n) => {
@@ -8,3 +10,4 @@ const sumOrMul = (arr,n) => {
         else return sum+record;
     }, 0);
 }
+
