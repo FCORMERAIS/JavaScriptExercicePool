@@ -1,1 +1,1 @@
-const longWords = (n) => n.every(value => 5 <=value)
+const longWords = (n) => n.every(value => 5 <= value.length)
