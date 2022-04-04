@@ -1,5 +1,5 @@
 const adder = (n,initialValue) => {  
-    const sumWithInitial = n.reduce((previousValue, currentValue) => previousValue + currentValue,initialValue)
+    const sumWithInitial = n.reduce((previousValue, currentValue) => previousValue + currentValue,initialValue = initialValue || 0)
     return sumWithInitial
 }
 
