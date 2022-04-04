@@ -1,0 +1,1 @@
+const every = (arr, fn) => arr.reduce((acc, val) => acc && fn(val), true)
