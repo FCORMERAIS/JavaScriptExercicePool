@@ -1,0 +1,1 @@
+const adder = (n) =>  n.reduce((previousValue, currentValue) => previousValue + currentValue,initialValue)
