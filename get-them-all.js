@@ -13,8 +13,8 @@ export function getArchitects() {
 }
 
 export function getClassical() {
-    var element = document.getElementsByClassName('a.classical')
-    var element2 = document.getElementsByClassName("a:not(.classical)")
+    var element = document.querySelectorAll('a.classical')
+    var element2 = document.querySelectorAll("a:not(.classical)")
     let arr1 = []
     let arr2 = []
     for (let architect of elements) {
@@ -27,8 +27,8 @@ export function getClassical() {
 }
 
 export function getActive() {
-    var element = document.getElementsByClassName('a.classical.active')
-    var elemnt2 = document.getElementsByClassName("a.classical:not(.active)")
+    var element = document.querySelectorAll('a.classical.active')
+    var elemnt2 = document.querySelectorAll("a.classical:not(.active)")
     let arr1 = []
     let arr2 = []
     for (let architect of elements) {
@@ -41,7 +41,7 @@ export function getActive() {
 }
 
 export function getBonannoPisano() {
-    var container = document.querySelector("#BonannoPisano");
+    var container = document.querySelectorAll("a#BonannoPisano.classical.active");
     var elements2 = container.querySelectorAll("a:not(#BonannoPisano).classical.active");
     let arr1 = []
     let arr2 = []
