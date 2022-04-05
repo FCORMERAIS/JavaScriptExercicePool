@@ -51,5 +51,5 @@ export const getBonannoPisano = () => {
     for (let elem of elements2) {
       arr2.push(elem);
     }
-    return [arr1[0], arr2
+    return [arr1[0], arr2];
   };
