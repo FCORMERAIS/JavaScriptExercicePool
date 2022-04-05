@@ -40,13 +40,16 @@ export function getActive() {
     return [arr1,arr2]
 }
 
-export function getBonannoPisano() {
-    var container = document.querySelectorAll("a#BonannoPisano.classical.active");
-    var elements2 = container.querySelectorAll("a:not(#BonannoPisano).classical.active");
-    let arr2 = []
-    for (let architect of elements2) {
-        arr2.push(architect)
+export const getBonannoPisano = () => {
+    let arr1 = [];
+    let arr2 = [];
+    let col = document.querySelectorAll("a#BonannoPisano.classical.active");
+    for (let elem of col) {
+      arr1.push(elem);
     }
-    return [container,arr2]
-
-}
+    col = document.querySelectorAll("a:not(#BonannoPisano).classical.active");
+    for (let elem of col) {
+      arr2.push(elem);
+    }
+    return [arr1[0], arr2];
+  };
