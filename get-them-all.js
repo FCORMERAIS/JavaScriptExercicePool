@@ -43,12 +43,12 @@ export function getActive() {
 export const getBonannoPisano = () => {
     let arr1 = [];
     let arr2 = [];
-    let col = document.querySelectorAll("a#BonannoPisano.classical.active");
-    for (let elem of col) {
+    let elements = document.querySelectorAll("a#BonannoPisano.classical.active");
+    let elements2 = document.querySelectorAll("a:not(#BonannoPisano).classical.active");
+    for (let elem of elements) {
       arr1.push(elem);
     }
-    col = document.querySelectorAll("a:not(#BonannoPisano).classical.active");
-    for (let elem of col) {
+    for (let elem of elements2) {
       arr2.push(elem);
     }
     return [arr1[0], arr2];
