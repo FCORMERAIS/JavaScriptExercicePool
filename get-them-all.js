@@ -43,14 +43,10 @@ export function getActive() {
 export function getBonannoPisano() {
     var container = document.querySelectorAll("a#BonannoPisano.classical.active");
     var elements2 = container.querySelectorAll("a:not(#BonannoPisano).classical.active");
-    let arr1 = []
     let arr2 = []
-    for (let architect of container) {
-        arr1.push(architect)
-    }
     for (let architect of elements2) {
         arr2.push(architect)
     }
-    return [arr1[0],arr2]
+    return [container,arr2]
 
 }
