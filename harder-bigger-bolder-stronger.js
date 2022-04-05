@@ -1,7 +1,7 @@
 export function generateLetters() {
     let app = document.querySelector("body");
     let random = 0
-    const letter = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+    const letter = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
     console.log(letter);
     for (let index = 0; index < 120; index++) {
         const newDiv = document.createElement("div");
