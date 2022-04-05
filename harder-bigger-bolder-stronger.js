@@ -1,12 +1,12 @@
 export function generateLetters() {
     let app = document.querySelector("body");
     let random = 0
-    const letter = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
-    console.log("hellp");
+    const letter = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+    console.log(letter);
     for (let index = 0; index < 120; index++) {
         const newDiv = document.createElement("div");
         random = Math.round(Math.random() * 25)
-        newDiv.createTextNode(letter[random]);
+        newDiv.textContent(letter[random]);
         if (index < 40) {
             newDiv.style.cssText = "font-size: " + (11 + ind) + "px; font-weight: " + 300 + ";";
         } else if (index < 80) {
