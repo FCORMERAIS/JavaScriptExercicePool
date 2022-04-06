@@ -1,23 +1,30 @@
 import {styles} from './pimp-my-style.data.js'
-let count = 0
-let addRemove = 0
-export function pimp() {
-    let element = document.querySelector("button");
-    if (count < styles.length && addRemove == 0) {
-        element.classList.add(styles[count]);
-        count++
-    }else {
-        element.classList.remove(styles[count])
-        count--
-    }
-    if (count == styles.length *2 -1) {
-        count = 0
-    }
-    if (count == 15) {
-        addRemove = 1
-        element.classList.add("unpimp");
-    }else if (count == 0) {
-        addRemove = 0
-        element.classList.remove("unpimp");
-    }
+let i = 0
+let j = 14
+let k = 0
+export function pimp(){
+    let elem = document.querySelector("button")
+    let mat = Math.floor(i/styles.length)
+    console.log(elem.classList)
+    console.log(j)
+        if (mat%2 == 0) {
+            j = 14
+            elem.classList.add(styles[k])
+            i++
+            k++
+            if(k == 15){
+                elem.classList.add('unpimp')
+            }
+        }
+        if (mat%2 != 0){
+            k = 0
+            elem.classList.add('unpimp')
+            elem.classList.remove(styles[j])
+            i++
+            j--
+            if(j == -1){
+                elem.classList.remove('unpimp')
+            }
+            
+     }
 }
