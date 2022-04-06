@@ -1,5 +1,5 @@
-const findIP  = (data) => {
-    const reg = /([1-9]|[1-9][0-9]|[1-2][0-9][0-9][.]{3}[1-9]|[1-9][0-9]|[1-2][0-9][0-9][.])/g
-    console.log(data.match(reg))
-    return data.match(reg)
+const findIP  = (data) => { 
+  const ipRegex = /\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b/g;
+  const ip = data.match(ipRegex);
+  return ip;
 }
