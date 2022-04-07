@@ -3,7 +3,7 @@ function pick(obj, str) {
     if (typeof str == "string") {
         str = [str]
     }
-    Object.keys(obj).forEach((str)=> keys.forEach((k)=> str == k ? res[k]=obj[k] : ""))
+    Object.keys(obj).forEach((str)=> str.forEach((k)=> str == k ? res[k]=obj[k] : ""))
     return res
 }
 
@@ -12,6 +12,6 @@ function omit() {
     if (typeof str == "string") {
         str = [str]
     }
-    Object.keys(obj).forEach((str)=> keys.forEach((k)=> str != k ? res[k]=obj[k] : ""))
+    Object.keys(obj).forEach((str)=> str.forEach((k)=> str != k ? res[k]=obj[k] : ""))
     return res
 }
