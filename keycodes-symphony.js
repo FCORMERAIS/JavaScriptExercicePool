@@ -1,8 +1,14 @@
 export function compose(){
     document.addEventListener("keydown", (event)=>{
-    let keypressed = event.keyCode
-    console.log(keypressed)
-    let elem = document.querySelectorAll('div')
-    elem.textContent = keypressed
+        let keypressed = event.key
+        if (keypressed == "Backspace"){
+            document.querySelectorAll("div")[document.querySelectorAll("div").length-1].remove()
+        }else {
+            let elem = document.createElement('div')
+            elem.textContent = keypressed
+            elem.classList.add("note")
+            document.body.appendChild(elem)
+            elem.innerHTML = keypressed
+        }
     })
 }
