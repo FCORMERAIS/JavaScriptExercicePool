@@ -7,7 +7,7 @@ function pick(obj, str) {
     return res
 }
 
-function omit() {
+function omit(obj,str) {
     let res = {}
     if (typeof str == "string") {
         str = [str]
