@@ -1,22 +1,16 @@
-function pick(obj, str) {
+const pick = (obj,keys) => {
     let res = {}
-    if (typeof str == "string") {
-        str = [str]
+    if (typeof keys == 'string') {
+        keys = [keys]
     }
-    Object.keys(obj).forEach((str)=> str.forEach((k)=> str == k ? res[k]=obj[k] : ""))
+    Object.keys(obj).forEach((key)=> keys.forEach((k)=> key == k ? res[k]=obj[k] : ""))
     return res
 }
-
-function omit(obj,str) {
-    let res = {}
-    if (typeof str == "string") {
-        str = [str]
+const omit = (obj,keys) => {
+    let res = Object.assign({},obj)
+    if (typeof keys == 'string') {
+        keys = [keys]
     }
-    Object.keys(obj).forEach((str)=> str.forEach((k)=> str != k ? res[k]=obj[k] : ""))
-    return res
-}
-const forEach = (arr, func) => {
-    let res = []
-    arr.map((cv,i,a) => res.push(func(cv,i,a)))
+    keys.forEach((key)=>delete res[key])
     return res
 }
