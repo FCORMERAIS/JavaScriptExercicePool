@@ -1,5 +1,9 @@
-function invert(obj) {
+const invert = (obj) => {
     let res = {}
-    res.push(obj.key[0],obj.value[0])
-    console.log(res)
+    for (let k in obj) {
+        if (obj.hasOwnProperty(k)) {
+            res[obj[k]] = k
+        }
+    }
+    return res
 }
