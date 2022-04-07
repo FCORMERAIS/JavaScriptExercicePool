@@ -4,8 +4,9 @@ export function compose(){
         if (keypressed == "Backspace"){
             document.querySelectorAll("div")[document.querySelectorAll("div").length-1].remove()
         }else if (keypressed == "Escape"){
-            let removeLastChar = document.querySelectorAll("div")
-            removeLastChar[removeLastChar.length-1].remove()
+            document.querySelectorAll("div").forEach((element) => {
+                element.remove()
+            })
         }else {
             let elem = document.createElement('div')
             elem.textContent = keypressed
