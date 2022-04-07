@@ -9,6 +9,7 @@ export function compose(){
             elem.classList.add("note")
             elem.style.background = "#"+"15"+event.keyCode
             document.body.appendChild(elem)
+            elem.innerHTML = keypressed
         }
     })
 }
