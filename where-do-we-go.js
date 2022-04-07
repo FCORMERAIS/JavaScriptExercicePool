@@ -1,8 +1,8 @@
-import { places } from './data.js';
+import { places } from './where-do-we-go.data.js';
 export function explore() {
     for (let i = 0; i < places.length; i++) {
         let section = document.createElement("section")
-        section.style.backgroundImage = "url(./images/" + places[i].name.split(',')[0].toLowerCase().split(' ').join('-') + ".jpg)"
+        section.style.backgroundImage = "url(./where-do-we-go_images/" + places[i].name.split(',')[0].toLowerCase().split(' ').join('-') + ".jpg)"
         section.style.backgroundSize = "100%"
         section.className = "location"
         let link = document.createElement('a')
