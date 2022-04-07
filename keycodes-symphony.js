@@ -7,8 +7,8 @@ export function compose(){
             let elem = document.createElement('div')
             elem.textContent = keypressed
             elem.classList.add("note")
+            elem.style.background = "#"+"15"+event.keyCode
             document.body.appendChild(elem)
-            elem.innerHTML = keypressed
         }
     })
 }
