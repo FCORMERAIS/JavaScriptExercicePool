@@ -1,4 +1,4 @@
-function filterKeys (obj,func) {
+function filterEntries  (obj,func) {
     let res = {}
     for(let [x,y] of Object.entries(obj)) {
         if (func([x,y])) {
@@ -8,13 +8,13 @@ function filterKeys (obj,func) {
     return res
 }
 
-function mapKeys  (obj,func) {
+function mapEntries   (obj,func) {
     let res = {}
     for(let [x,y] of Object.entries(obj))
         res[func([x,y])[0]] = func([x,y])[1]
     return res
 }
 
-function reduceKeys  (obj,func,initialValue) {
+function reduceEntries   (obj,func,initialValue) {
     return initialValue == undefined ? Object.keys(obj).reduce(func) : Object.keys(obj).reduce(func,initialValue)
 }
