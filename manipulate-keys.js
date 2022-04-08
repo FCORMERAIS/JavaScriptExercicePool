@@ -1,7 +1,7 @@
 function filterKeys (obj,func) {
     let res = {}
     for(let [x,y] of Object.entries(obj)) {
-        if (func(y)) {
+        if (func(x)) {
             res[x] = y
         }
     }
@@ -12,7 +12,7 @@ function filterKeys (obj,func) {
 function mapKeys  (obj,func) {
     let res = {}
     for(let [x,y] of Object.entries(obj))
-        res[x] = func(y)
+        res[func(x)] = v
     return res
 }
 
