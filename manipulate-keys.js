@@ -16,5 +16,5 @@ function mapKeys  (obj,func) {
 }
 
 function reduceKeys  (obj,func,initialValue) {
-    return initialValue == undefined ? Object.values(obj).reduce(func) : Object.values(obj).reduce(func,initialValue)
+    return initialValue == undefined ? Object.keys(obj).reduce(func) : Object.keys(obj).reduce(func,initialValue)
 }
