@@ -5,6 +5,7 @@ function filterValues(obj,func) {
             res[x] = y
         }
     }
+    return res
 }
 
 function mapValues (obj,func) {
@@ -15,5 +16,5 @@ function mapValues (obj,func) {
 }
 
 function reduceValues (obj,func,initialValue) {
-    return initialValue == undefined ? Object.values(obj).reduce(func) :  Object.values(obj).concat(initialValue).reduce(func)
+    return initialValue == undefined ? Object.values(obj).reduce(func) : Object.values(obj).reduce(func,initialValue)
 }
