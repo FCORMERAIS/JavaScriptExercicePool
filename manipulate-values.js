@@ -15,5 +15,5 @@ function mapValues (obj,func) {
 }
 
 function reduceValues (obj,func,initialValue) {
-    return initialValue == undefined ? Object.values(obj).reduce(func) : Object.values(obj).reduce(func,initialValue)
+    return initialValue == undefined ? Object.values(obj).reduce(func) :  Object.values(obj).concat(initialValue).reduce(func)
 }
