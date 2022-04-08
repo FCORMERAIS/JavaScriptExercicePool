@@ -5,6 +5,7 @@ function filterKeys (obj,func) {
             res[x] = y
         }
     }
+    console.log(obj,func)
     return res
 }
 
