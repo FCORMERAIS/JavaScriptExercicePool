@@ -13,4 +13,4 @@ const omit = (obj,keys) => {
     }
     keys.forEach((key)=>delete res[key])
     return res
-}
+}   
