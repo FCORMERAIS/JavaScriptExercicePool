@@ -14,11 +14,7 @@ const fusion = (a,b) => {
         return b
     } else if (superTypeOf(a) == 'Object' && superTypeOf(b) == 'Object') {
         let res = {}
-        if (Object.keys(a).length > Object.keys(b).length) {
-            Object.keys(a).forEach((key)=> res[key] = fusion(a[key],b[key]))
-        } else {
-            Object.keys(b).forEach((key)=> res[key] = fusion(a[key],b[key]))
-        }
+        Object.keys(a).forEach((key)=> res[key] = fusion(a[key],b[key]))
         return res
     } else {
         return b
