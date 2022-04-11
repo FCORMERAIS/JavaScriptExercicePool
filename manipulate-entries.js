@@ -34,9 +34,13 @@ function totalCalories (obj) {
 function lowCarbs(obj) {
     let res = {}
     for(let [x,y] of Object.entries(obj)) {
-        if (y.carbs < 50) {
+        if (y.carbs > 50) {
             res[x] = y
         }
     }
     return res
+}
+
+function cartTotal(obj) {
+
 }
