@@ -14,8 +14,8 @@ const reduceCurry = (func) => {
     return (obj,iv) => Object.entries(obj).reduce(func, iv)
 }
 
-function filterCurry (func) {
-    return (obj,iv) => Object.entries(obj).reduce(func, iv)
+const filterCurry = (func) => {
+    return (obj) =>  Object.fromEntries(Object.entries(obj).filter(func))
 }
 
 function reduceScore (obj,initialValue) {
