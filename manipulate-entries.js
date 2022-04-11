@@ -23,12 +23,12 @@ function reduceEntries   (obj,func,initialValue = '') {
     return initialValue
 }
 
-function totalCalories (obj) {
-    let total = 0
-    for(let [x,y] of Object.entries(obj)) {
-        total += y.calories
+const totalCalories = (obj) => {
+    let res = 0
+    for (let [k, v] of Object.entries(obj)) {
+        res += v/100*nutritionDB[k]['calories']
     }
-    return total
+    return Number(res.toFixed(1))
 }
 
 function lowCarbs(obj) {
