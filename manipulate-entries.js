@@ -35,7 +35,7 @@ function lowCarbs(obj) {
     console.log
     let res = {}
     for(let [x,y] of Object.entries(obj)) {
-        if (v/100*nutritionDB[k]['carbs'] < 50) {
+        if (y/100*nutritionDB[x]['carbs'] < 50) {
             res[x] = y
         }
     }
