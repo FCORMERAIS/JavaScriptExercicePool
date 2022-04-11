@@ -1,30 +1,31 @@
-const defaultCurry = (obj1) => {
-    return (obj2) => {
-        let res = Object.assign({},obj1)
-        Object.keys(obj2).forEach((k)=>res[k]=obj2[k])
+function defaultCurry (obj) {
+    return (replace) => {
+        let res = Object.assign({},obj)
+        Object.keys(replace).forEach((k)=>res[k]=replace[k])
         return res
     }
 }
 
-const mapCurry = (func) => {
+function mapCurry (func) {
     return (obj) => Object.fromEntries(Object.entries(obj).map(func))
 }
 
-const reduceCurry = (func) => {
-    return (obj,iv) => Object.entries(obj).reduce(func, iv)
+function reduceCurry (func,initialValue) {
+    return (obj) => Object.values(obj).reduce(func,initialValue)
 }
 
-const filterCurry = (func) => {
-    return (obj) =>  Object.fromEntries(Object.entries(obj).filter(func))
+function filterCurry (func,obj) {
+    return (obj) => Object.fromEntries(Object.entries(obj).filter(func))
 }
 
-const forceUsers = filterCurry(([k,v]) => v.isForceUser)
+function reduceScore (obj,initialValue) {
+    return (obj) => Object.values(obj).reduce((a,b) => a+b,initialValue)
+}
 
-const reduceScore = (obj,iv) => reduceCurry((acc,[k,v]) => acc + v.shootingScore+ v.pilotingScore)(forceUsers(obj),iv)
+function filterForce (obj) {
+    return (obj) => Object.fromEntries(Object.entries(obj) > 80 ? obj : {})
+}
 
-const filterForce = (obj) => filterCurry(([k,v])=>v.shootingScore >= 80)(forceUsers(obj))
-
-const mapAverage = (obj) => mapCurry(([k,v])=>{
-    let nv = {...v,averageScore: (v.shootingScore+v.pilotingScore)/2}
-    return [k,nv]
-})(obj)
+function mapAverage(obj) {
+    return (obj) => Object.fromEntries(Object.entries(obj).map(([k,v]) => [k,v/Object.keys(obj).length]))
+}
