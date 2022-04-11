@@ -10,7 +10,7 @@ function mapCurry (func) {
     return (obj) => Object.fromEntries(Object.entries(obj).map(func))
 }
 
-function reduceCurry (func,obj,initialValue) {
+function reduceCurry (func,initialValue) {
     return (obj) => Object.values(obj).reduce(func,initialValue)
 }
 
