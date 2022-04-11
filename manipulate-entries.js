@@ -18,8 +18,9 @@ function mapEntries   (obj,func) {
 function reduceEntries   (obj,func,initialValue = '') {
     let arr = Object.entries(obj)
     for(let i of arr) {
-        iv = func(initialValue,i)
+        initialValue = func(initialValue,i)
     }
+    return initialValue
 }
 
 function totalCalories (obj) {
