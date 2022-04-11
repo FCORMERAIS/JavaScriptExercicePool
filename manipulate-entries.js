@@ -15,6 +15,18 @@ function mapEntries   (obj,func) {
     return res
 }
 
-function reduceEntries   (obj,func,initialValue) {
-    return initialValue == undefined ? Object.keys(obj).reduce(func) : Object.keys(obj).reduce(func,initialValue)
+function reduceEntries   (obj,func,initialValue = '') {
+    let arr = Object.entries(obj)
+    for(let i of arr) {
+        iv = func(initialValue,i)
+    }
 }
+
+function totalCalories (obj) {
+    let total = 0
+    for(let [x,y] of Object.entries(obj)) {
+        total += y.calories
+    }
+    return total
+}
+
