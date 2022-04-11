@@ -14,8 +14,8 @@ function reduceCurry (func,initialValue) {
     return (obj) => Object.values(obj).reduce(func,initialValue)
 }
 
-function filterCurry (func,obj) {
-    return (obj) => Object.fromEntries(Object.entries(obj).filter(func))
+function filterCurry (func) {
+    return (obj,iv) => Object.entries(obj).reduce(func, iv)
 }
 
 function reduceScore (obj,initialValue) {
