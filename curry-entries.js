@@ -1,10 +1,5 @@
-function defaultCurry (obj = {},replace) {
-    for(let [objKey,objValue] of Object.entries(obj)) {
-        for(let [replaceKey,replaceValue] of Object.entries(replace)) {
-            if (objKey == replaceKey) {
-                obj[objKey] = replaceValue
-            }
-        }
-    }
-    return obj
+function defaultCurry (obj,replace) {
+    let res = Object.assign({},obj)
+    Object.keys(replace).forEach((k)=>res[k]=replace[k])
+    return res
 }
