@@ -6,7 +6,7 @@ function defaultCurry (obj) {
     }
 }
 
-function mapCurry (func,obj) {
+function mapCurry (func) {
     return (obj) => Object.fromEntries(Object.entries(obj).map(func))
 }
 
