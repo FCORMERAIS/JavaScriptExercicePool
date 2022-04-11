@@ -1,7 +1,7 @@
-const defaultCurry = (obj1) => {
-    return (obj2) => {
-        let res = Object.assign({},obj1)
-        Object.keys(obj2).forEach((k)=>res[k]=obj2[k])
+const defaultCurry = (obj) => {
+    return (replace) => {
+        let res = Object.assign({},obj)
+        Object.keys(replace).forEach((k)=>res[k]=replace[k])
         return res
     }
 }
