@@ -22,9 +22,7 @@ function reduceScore (obj,initialValue) {
     return (obj) => Object.values(obj).reduce((a,b) => a+b,initialValue)
 }
 
-function filterForce (obj) {
-    return (obj) => Object.fromEntries(Object.entries(obj) > 80 ? obj : {})
-}
+const filterForce = (obj) => filterCurry(([k,v])=>v.shootingScore >= 80)(forceUsers(obj))
 
 function mapAverage(obj) {
     return (obj) => Object.fromEntries(Object.entries(obj).map(([k,v]) => [k,v/Object.keys(obj).length]))
