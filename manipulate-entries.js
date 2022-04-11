@@ -32,6 +32,7 @@ function totalCalories (obj) {
 }
 
 function lowCarbs(obj) {
+    console.log(obj)
     let res = {}
     for(let [x,y] of Object.entries(obj)) {
         if (y.carbs > 50) {
