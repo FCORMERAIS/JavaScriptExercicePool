@@ -26,7 +26,9 @@ function reduceEntries   (obj,func,initialValue = '') {
 function totalCalories (obj) {
     let total = 0
     for(let [x,y] of Object.entries(obj)) {
-        total += y.calories
+        if (v/100*nutritionDB[k]['carbs'] < 50) {
+            res[x] = y
+        }
     }
     return total
 }
