@@ -25,3 +25,4 @@ const filterForce = (obj) => filterCurry(([k,v])=>v.shootingScore >= 80)(forceUs
 function mapAverage(obj) {
     return (obj) => Object.fromEntries(Object.entries(obj).map(([k,v]) => [k,v/Object.keys(obj).length]))
 }
+const forceUsers = filterCurry(([k,v]) => v.isForceUser)
