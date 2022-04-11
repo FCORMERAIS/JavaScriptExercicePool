@@ -18,9 +18,7 @@ const filterCurry = (func) => {
     return (obj) =>  Object.fromEntries(Object.entries(obj).filter(func))
 }
 
-function reduceScore (obj,initialValue) {
-    return (obj) => Object.values(obj).reduce((a,b) => a+b,initialValue)
-}
+const reduceScore = (obj,iv) => reduceCurry((acc,[k,v]) => acc + v.shootingScore+ v.pilotingScore)(forceUsers(obj),iv)
 
 const filterForce = (obj) => filterCurry(([k,v])=>v.shootingScore >= 80)(forceUsers(obj))
 
