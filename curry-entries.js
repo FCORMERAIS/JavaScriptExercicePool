@@ -10,8 +10,8 @@ function mapCurry (func) {
     return (obj) => Object.fromEntries(Object.entries(obj).map(func))
 }
 
-function reduceCurry (func,initialValue) {
-    return (obj) => Object.values(obj).reduce(func,initialValue)
+const reduceCurry = (func) => {
+    return (obj,iv) => Object.entries(obj).reduce(func, iv)
 }
 
 function filterCurry (func) {
