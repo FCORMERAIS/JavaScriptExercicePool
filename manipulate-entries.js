@@ -8,7 +8,7 @@ function filterEntries  (obj,func) {
     return res
 }
 
-function mapEntries   (obj,func) {
+function mapEntries (obj,func) {
     let res = {}
     for(let [x,y] of Object.entries(obj))
         res[func([x,y])[0]] = func([x,y])[1]
@@ -31,3 +31,12 @@ function totalCalories (obj) {
     return total
 }
 
+function lowCarbs(obj) {
+    let res = {}
+    for(let [x,y] of Object.entries(obj)) {
+        if (y.carbs < 50) {
+            res[x] = y
+        }
+    }
+    return res
+}
