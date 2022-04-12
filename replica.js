@@ -1,3 +1,3 @@
-function replica () {
-    
+function replica (obj) {
+    console.log(obj)
 }
