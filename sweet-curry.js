@@ -1,4 +1,4 @@
-const mul2 = (a) =>{
+const mult2 = (a) =>{
     return (b) => {
         return a * b;
     }
